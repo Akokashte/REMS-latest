@@ -1,0 +1,448 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .home1{
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+  }
+  /* .navbar{
+    width: 100%;
+    min-height: 1.5vh;
+    max-height: auto;
+    background-color: rgb(169, 108, 169);
+  } */
+  .welcomepage{
+    width: 100%;
+    min-height: 81.5vh;
+    max-height: auto;
+    background:linear-gradient(rgb(181, 137, 181),rgb(207, 151, 117)) ;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;  
+  }
+  .welcomepage h1{
+    width: 35rem;
+    /* font-weight: 800; */
+    font-size:70px;
+    color: white;
+    padding-top: 4rem;
+    padding-left: 3rem;
+  }
+  .welcomepage #student{
+    width: 740px;
+    height: 81.5vh;
+  }
+  .home2{
+    width: 100%;
+    min-height: 120vh;
+  }
+  .home2 .vertical{
+    width: 100%;
+    min-height: 20vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30rem;
+  }
+  .home2 .vertical .line{
+    width: 3.2px;
+    height: 20vh;
+    background: linear-gradient(0deg, rgba(219,202,154,1) 0%, rgba(187,130,191,1) 100%);
+  }
+  .vertical img{
+    width: 10rem;
+    height: 10.5rem;
+    padding-top: 2rem;
+  }
+  .home2 .heading1{
+    min-height: 10vh;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+    .home2 .heading1 h1{
+      padding-top: 20px;
+    }
+  
+  .home2 .heading2{
+    min-height: 10vh;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home2 .heading2 h1{
+    padding-top: 25px;
+    font-weight: 400;
+  }
+  .home2 .homevideo{
+    width: 100%;
+    min-height: 90vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home2 .homevideo .textvideo{
+    width: 90%;
+    min-height: 75vh;
+    max-height: auto;
+    border-radius: 2rem;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(245,237,220,1) 0%, rgba(250,233,251,1) 100%);
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+  
+  }
+  .home2 .homevideo .textvideo .text{
+    width: 30rem;
+    height: 10rem;
+    padding-top: 3.6rem;
+  }
+  .home2 .homevideo .textvideo .text h2{
+    font-size: 18px;
+    font-weight: 420;
+  }
+  
+  .home2 .homevideo .textvideo .text a{
+    width: 7rem;
+    height: 3rem;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(170, 29, 170);
+  }
+  .home2 .homevideo .textvideo .video{
+    width: 30rem;
+    height: 30rem;
+    background-color: black;
+    border-radius: 2rem;
+  }
+  .home3{
+    width: 100%;
+    min-height: 65vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home3 .home3info{
+    width: 90%;
+    min-height:50vh ;
+    max-height: auto;
+    border-radius: 2rem;
+  }
+  .home3 .home3info .info{
+    width: 100%;
+    min-height: 10vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .home3 .home3info .links{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    width: 100%;
+    height: 40vh;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  .home3 .home3info .basicinfo{
+    background-color: white;
+    box-shadow: 1px 1px 5px  rgb(220, 220, 220);
+    width: 13.5rem;
+    height: 10rem;
+    border-radius: 1.2rem;
+  }
+  .home3 .home3info .basicinfo .basicinfoimg{
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .home3 .home3info .basicinfo .basicinfoimg img{
+    width: 3rem;
+    height: 3rem;
+  }
+  .home3 .home3info .basicinfo .basicinfohead{
+    width: 100%;
+    height: 4.5rem;display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .home3 .home3info .basicinfo .basicinfohead h1{
+    font-size: 21px;
+    font-weight:400 ;
+  }
+  .home4{
+    width: 100%;
+    min-height: 90vh;
+    max-height: auto;
+    background-color: red;
+  }
+  .home5{
+    width: 100%;
+    min-height: 90vh;
+    max-height: auto;
+    background-color: yellow;
+  }
+  
+  .home6{
+    width: 100%;
+    min-height: 65vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home6 .home6info{
+    width: 90%;
+    min-height:50vh ;
+    max-height: auto;
+    border-radius: 2rem;
+  }
+  .home6 .home6info .info{
+    width: 100%;
+    min-height: 10vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .home6 .home6info .links{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    width: 100%;
+    height: 40vh;
+    /* border-bottom-right-radius: 2rem; */
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+  }
+  .home6 .home6info .basicinfo{
+    background-color: white;
+    box-shadow: 1px 1px 5px  rgb(220, 220, 220);
+    width: 13.5rem;
+    height: 10rem;
+    border-radius: 1.2rem;
+  }
+  .home6 .home6info .basicinfo .basicinfoimg{
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .home6 .home6info .basicinfo .basicinfoimg img{
+    width: 3rem;
+    height: 3rem;
+  }
+  .home6 .home6info .basicinfo .basicinfohead{
+    width: 100%;
+    height: 4.5rem;display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .home6 .home6info .basicinfo .basicinfohead h1{
+    font-size: 20px;
+    font-weight:350 ;
+  }
+  .footer{
+    width: 100%;
+    min-height: 90vh;
+    max-height: auto;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .main-footer{
+    width: 100%;
+    min-height: 80vh;
+    max-height: auto;
+  }
+  .footer .main-footer .heading-1{
+    width: 100%;
+    min-height: 5rem;
+    max-height: auto;
+    
+  }
+  .footer .main-footer .heading-1 .sub1{
+    width: 100%;
+    min-height: 1rem;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .main-footer .heading-1 .sub2{
+    width: 100%;
+    min-height: 3rem;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .main-footer .heading-2{
+    width: 100%;
+    min-height: 5rem;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .footer .main-footer .heading-2 h2{
+    font-weight: 430;
+  }
+  .footer .main-footer .footer-links{
+    width: 100%;
+    min-height: 60vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .main-footer .footer-links .actuallinks{
+    width: 70%;
+    height: 55vh;
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 6px rgb(146, 146, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .main-footer .footer-links .actuallinks .pages{
+    width: 30%;
+    min-height: 50vh;
+    max-height: auto;
+    border-right: 1px solid black;
+  }
+  .footer .main-footer .footer-links .actuallinks .pages .foothead{
+    width: 100%;
+    min-height: 10vh;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .main-footer .footer-links .actuallinks .pages .footpages{
+    width: 100%;
+    min-height: 40vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .main-footer .footer-links .actuallinks .pages .footpages a{
+  text-decoration: none;
+  }
+  .footer .main-footer .footer-links .actuallinks .pages .footpages li{
+    padding-top: 1.3rem;
+    list-style-type: none;
+  }
+  .footer .main-footer .footer-links .actuallinks .utility-pages{
+    width: 30%;
+    min-height: 50vh;
+    max-height: auto;
+    border-right: 1px solid black;
+  }
+  .footer .main-footer .footer-links .actuallinks .utility-pages .foothead{
+    width: 100%;
+    min-height: 10vh;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .main-footer .footer-links .actuallinks .utility-pages .footpages{
+    width: 100%;
+    min-height: 40vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .main-footer .footer-links .actuallinks .utility-pages .footpages a{
+    text-decoration: none;
+    }
+    .footer .main-footer .footer-links .actuallinks .utility-pages .footpages li{
+      padding-top: 1.3rem;
+      list-style-type: none;
+  
+    }
+  .footer .main-footer .footer-links .actuallinks .contact{
+    width: 30%;
+    min-height: 50vh;
+    max-height: auto;
+  }
+  .footer .main-footer .footer-links .actuallinks .contact .foothead{
+    width: 100%;
+    min-height: 10vh;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .main-footer .footer-links .actuallinks .contact .footpages{
+    width: 100%;
+    min-height: 40vh;
+    max-height: auto;
+  }
+  .footer .main-footer .footer-links .actuallinks .contact .footpages .address{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer .main-footer .footer-links .actuallinks .contact .footpages .phone{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+  }
+  .footer .main-footer .footer-links .actuallinks .contact .footpages #add{
+   width: 5rem;
+   height: 5rem;
+   border-radius: 1rem;
+  }
+  
+  .footer .main-footer .copyright{
+    width: 100%;
+    min-height: 2rem;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

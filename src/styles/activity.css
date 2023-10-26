@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.activity_heading {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.activity_heading h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 20vh;
+}
+
+.sports_card_container {
+    width: 100%;
+    height: fit-content;
+    max-height: 180vh;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.sports_card {
+    width: 35rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sports_card .sports_name {
+    height: 1.8rem;
+    width: 100%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.sports_card .sports_name p {
+    color:var(--bg_nav_main);
+}
+
+.sports_card img {
+    object-fit: contain cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.head1 {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    font-family: 'Heebo', sans-serif;
+    justify-content: center;
+    background-color: var(--bg_nav_main);
+}
+
+.innerhead_part {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: gray; */
+}
+
+.download_section {
+    height: 5rem;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    cursor: pointer;
+}
+.download_section:hover > .brochure {
+    text-decoration: underline;
+}
+
+.download_section .download_icon {
+    font-size: 1.4rem;
+    color: var(--brochure_color)
+}
+
+.download_section .brochure {
+    font-size: 1.3rem;
+    color: var(--brochure_color)
+}
+
+.searchgroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 60%;
+}
+
+.searchgroup .search_container {
+    border: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--navbar_textcolor);
+}
+
+.searchgroup .search {
+    width: 30rem;
+    font-size: 1.3rem;
+    padding: 0.3rem 0;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    caret-color: var(--navbar_textcolor);
+    color: white;
+    background: transparent;
+}
+
+.searchgroup .search_icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--navbar_textcolor);
+    transition: transform 0.3s ease;
+}
+
+.searchgroup .search_icon:hover {
+  color: rgb(115, 231, 249);
+  transform: scale(1.5,1.5);
+}
+
+.searchgroup .enquire_btn {
+    background-color: var(--bg_light);
+    font-size: 1.2rem;
+    color: var(--txt_orange);
+    padding: 1rem 3rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: none;
+    box-shadow:1px 1px 12px -3px black;
+    transition: all 0.2s ease-in;
+}
+
+.searchgroup .enquire_btn:hover {
+    background-color: var(--bg_hover_orange);
+}
+
+::-webkit-input-placeholder {
+    color: var(--navbar_textcolor);
+}
+
+.change::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #909;
+}
+
+.head2 {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg_navlink);
+}
+
+.head2_inner_container {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    width: 90%;
+}
+
+.head2_inner_container .logo_container{
+    width: 15rem;
+    object-fit: cover contain;
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    justify-content: center;
+    background-color: var(--bg_light);
+    border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.head2_inner_container .logo_container img{
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.head2_inner_container .logo_container .logo_title{
+    display: flex;
+    flex-direction: column;
+}
+
+.head2_inner_container .logo_container .logo_title h1{
+    font-weight: 400;
+    font-family: 'Young Serif', serif;
+    text-align: center;
+    color: rgb(44, 50, 239);
+}
+.head2_inner_container .logo_container .logo_title span{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.head2 .navbar ul {
+    display: flex;
+    font-size: 1.1rem;
+    list-style: none;
+    gap: 1.3rem;
+}
+
+.head2 .navbar ul li {
+    position: relative;
+    line-height: 5rem;
+    font-weight: 500;
+    color: var(--navbar_textcolor);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.head2 .navbar ul li a{
+    display: inline-block;
+    width: 100%;
+    padding: 0rem 0.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.head2 .navbar .down {
+    transform: translate(0,4px);
+    opacity: 1;
+}
+
+.head2 .navbar .dropdown {
+    visibility: hidden;
+    opacity: 0;
+    width: 15rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg_light);
+    border-radius: 0 0.2rem 0.3rem 0.3rem;
+    gap: 0;
+    z-index: 100;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.head2 .navbar .dropdown li {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: gray;
+    padding: 0 0;
+    border-radius: 0 0 0.3rem 0.3rem;
+    cursor: pointer;
+}
+
+.head2 .dropdown a{
+    width: 100%;
+    display: inline-block;
+    height: 3.5rem;
+    padding-left: 0.5rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+    text-decoration: none;
+    transition: all 0.025s ease-in;
+    color: gray;
+}
+
+.head2 .navbar ul li:hover>.dropdown {
+    visibility: visible;
+    opacity: 1;
+    color: black;
+}
+
+.head2 .navbar ul li a:hover>.down {
+    transform: rotate(180deg);
+}
+
+.head2 .navbar li:hover {
+    background-color: var(--bg_light);
+    color: black;
+}
+
+.head2 .dropdown li:hover,.head2 .dropdown li a:hover {
+    color: black;
+    background-color: rgb(208, 208, 209);
+}
+
+/* for removing cross symbol of search bar */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+display: none;
+}
