@@ -62,7 +62,6 @@ const Navbar = () => {
                                     <ul className="dropdown">
                                         <li><NavLink to="#">Admission Process</NavLink></li>
                                         <li><NavLink to="#">Policies</NavLink></li>
-                                        <li><NavLink to="#">Enquiry</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink to="/facilities">Facilities</NavLink></li>

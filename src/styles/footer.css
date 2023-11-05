@@ -1,0 +1,112 @@
+.footer {
+    width: 100%;
+    min-height: 90vh;
+    max-height: auto;
+    background-color: rgb(237, 237, 237);
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer #main-footer {
+    width: 80%;
+    min-height: 65vh;
+    max-height: auto;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer #main-footer #contact-us {
+    width: 60%;
+    height: 55vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  
+  }
+  
+  .footer #main-footer #contact-us #contact-us-head {
+    width: 100%;
+    height: 10vh;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    color: #832996;
+  }
+  
+  .footer #main-footer #contact-us #contact-us-main {
+    width: 100%;
+    height: 35vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 2.5rem;
+  }
+  .footer #main-footer #contact-us #contact-us-main h2{
+    font-weight: 400;
+  }
+  .footer #main-footer #footer-links {
+    width: 40%;
+    height: 55vh;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .footer #main-footer #footer-links h1{
+    color: #832996;
+    padding-right: 5rem;
+  
+  }
+  .footer #main-footer #footer-links ul {
+    list-style-type: none;
+  }
+  
+  .footer #main-footer #footer-links li {
+    padding: 0.5rem;
+    padding-right: 10rem;
+  }
+  
+  .footer #main-footer #footer-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  .footer #copyright-area {
+    width: 80%;
+    height: 20vh;
+    border-top: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer #copyright-area #copyright-area-socialmedia{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .footer #copyright-area #copyright-area-copy{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer #copyright-area #copyright-area-copy h2{
+    font-weight: 500;
+    color:#832996 ;
+  }

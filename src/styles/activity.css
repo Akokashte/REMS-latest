@@ -20,6 +20,7 @@
 
 .activity_heading h1 {
     width: 100%;
+    color: var(--bg_text);
     text-align: center;
     line-height: 20vh;
 }

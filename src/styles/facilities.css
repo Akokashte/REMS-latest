@@ -13,14 +13,16 @@
 /* .facility_image_carousel{
 } */
 .content_box {
+    position: relative;
     height: 81.5vh;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .content_wrapper {
-    width: 70%;
+    width: 100%;
     height: 100%;
 }
 
@@ -29,51 +31,62 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, .5);
 }
 
 .text_content {
-    width: 30rem;
+    width: 100%;
     height: 100%;
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(rgb(229 255 135), rgb(244 156 97));
+    background:  rgb(0 0 3 / 47%);
+    box-shadow: 0 4px 30px rgba(1, 1, 21, 0.271);
+    /* backdrop-filter: blur(1.2px);
+-webkit-backdrop-filter: blur(1.2px); */
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .inner_text_div {
-    width: 80%;
+    width: 90%;
     height: 50%;
     display: grid;
+    gap: 2rem;
     place-items: center;
 }
 
 .inner_text_div h2 {
-    font-size: 2.2rem;
-    color: rgb(86, 60, 254);
+    font-size: 5rem;
+    color: #FFFF00;   
 }
 
 .inner_text_div p {
-    font-size: 1.3rem;
+    width: 100;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
     text-align: justify;
 }
 
 .btn {
     outline: none;
     border: none;
-    font-size: 1rem;
-    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    padding: 1rem 2.5rem;
     border-radius: 2rem;
     color: white;
-    background-color: rgb(65, 65, 255);
+    background-color: rgb(228 15 149);
     transition: transform 0.2s ease-in;
     cursor: pointer;
 }
 
 .btn:hover {
     transform: scale(1.2, 1.2);
-    background-color: rgb(83, 83, 253);
+    background-color: rgb(255, 47, 179);
 }
 
 /* carousel ends */
@@ -134,9 +147,10 @@
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     transition: box-shadow 2s ease-in;
 }
-.facility_card:hover{
+
+.facility_card:hover {
     cursor: pointer;
-    box-shadow:inset rgb(219, 219, 214) 0px 0px 60px -12px
+    box-shadow: inset rgb(219, 219, 214) 0px 0px 60px -12px
 }
 
 .inner_facility_card {
@@ -146,6 +160,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0.5rem;
     gap: 2rem;
 }
 
@@ -165,7 +180,7 @@
     color: #005643;
 }
 
-.library {
+.facility_icon {
     font-size: 5rem;
-    color: #005643;
+    color: #681bc2;
 }

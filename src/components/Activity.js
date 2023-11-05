@@ -7,13 +7,13 @@ const Activity = () => {
         <>
             <section className="activity">
                 <div className="activity_heading">
-                    <h1>The Right Activities</h1>
+                    <h1>Co-Curricular Activities</h1>
                 </div>
                 <div className="sports_card_container">
-                    <SportsCard img={'tycondo.jpg'} name={'Tycondo'}/>
+                    <SportsCard img={'tycondo.jpg'} name={'Taekwondo'}/>
+                    <SportsCard img={'primary.png'} name={'Fun Activities'}/>
                     <SportsCard img={'yoga.jpg'} name={'Yoga'}/>
-                    <SportsCard img={'sketing.jpg'} name={'Sketing'}/>
-                    <SportsCard img={'yoga.jpg'} name={'Yoga'}/>
+                    <SportsCard img={'sketing.jpg'} name={'Skating'}/>
                 </div>
             </section>
         </>
