@@ -8,31 +8,31 @@ const facility_cards = [
     {
         component: <GiRobotGolem className="facility_icon" />,
         heading: "Atal Tinkering Lab",
-        desc: "Rotary is a community of readers. The libraries across our 3 campuses deliver a range of programmes",
+        desc: "ATL (Atal Tinkering Lab) is a work space where young minds can give shape to their ideas through hands on do-it-yourself mode",
         link: '#'
     },
     {
         component: <HiMiniBuildingLibrary className="facility_icon" />,
-        heading: "Library services and facilities",
-        desc: "Rotary is a community of readers. The libraries across our 3 campuses deliver a range of programmes",
+        heading: "Library Services",
+        desc: "A library is a place in the school where vast collections of academics books are kept",
         link: '#'
     },
     {
         component: <FaLaptop className="facility_icon" />,
         heading: "Information Communication Technology",
-        desc: "Rotary is a community of readers. The libraries across our 3 campuses deliver a range of programmes",
+        desc: "We are making our students digitally strong by teaching them different programming languages like Java, Python etc.",
         link: '#'
     },
     {
         component: <GiTeacher className="facility_icon" />,
         heading: "Counceling",
-        desc: "Rotary is a community of readers. The libraries across our 3 campuses deliver a range of programmes",
+        desc: "School counsellor helps individual students to deal with their academic, emotional and social concerns.",
         link: '#'
     },
     {
         component: <SlChemistry className="facility_icon" />,
         heading: "Science Laboratory",
-        desc: "Rotary is a community of readers. The libraries across our 3 campuses deliver a range of programmes",
+        desc: "Rotary school combines classroom teaching with laboratory experiments to ensure that their students grasp each and every concept thoroughly.",
         link: '#'
     }]
 

@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 90vh;
     max-height: auto;
+    position: relative;
     background-color: rgb(237, 237, 237);
     /* background-color: blue; */
     display: flex;
@@ -98,6 +99,10 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    transition: transform 0.4s linear;
+  }
+  .footer #copyright-area #copyright-area-socialmedia a:hover{
+    transform: scale(1.2,1.2);
   }
   .footer #copyright-area #copyright-area-copy{
     width: 100%;

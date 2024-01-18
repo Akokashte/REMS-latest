@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Baloo 2', cursive; */
+  }
+  
+  /* login css here */
+  .login {
+    z-index: -1;
+    width: 100%;
+    height: 92.125vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mycontainer {
+    width: 70%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: black 0px 1px 4px 0px;
+  }
+  
+  .login_content {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form_title {
+    width: 80%;
+    text-align: left;
+  }
+  
+  .form-group {
+    width: 80%;
+    margin: 0.8rem auto;
+    display: flex;
+    border-bottom: 2px solid rgb(111, 104, 104);
+  }
+  
+  .form-group label {
+    width: 2rem;
+    text-align: center;
+    grid-row: 1/2;
+    background: transparent;
+    padding: 0.5rem 0;
+  }
+  
+  .form-group input {
+    width: 33rem;
+    outline: none;
+    padding: 0.5rem 0;
+    background: transparent;
+    border: none;
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: left;
+  }
+  
+  .btndiv {
+    width: 80%;
+    margin: 1.8rem auto;
+    text-align: left;
+  }
+  
+  .btndiv input {
+    padding: 0.5rem 2rem;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 2px;
+    transition: background-color 0.2s ease-in;
+  }
+  
+  .btndiv input:hover {
+    background-color: var(--primary_hover);
+  }
+
+  .socialIcons {
+    width: 80%;
+    margin: 0.8rem auto;
+    display: flex;
+    font-size: 1.2rem;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .loginwith{
+    font-weight: 500;
+  }
+  .social_icons_list{
+    display: flex;
+    gap: 0.5rem;
+  }
+  .google{
+    background-color: rgb(246, 53, 53);
+    cursor: pointer;
+}
+.twitter{
+    background-color: var(--primary);
+    cursor: pointer;
+}
+.facebook{
+    background-color: rgb(10, 69, 157);
+    cursor: pointer;
+  }
+  .social_icons_list div{
+    display: flex;
+    gap: 0.5rem;
+    color: white;
+    padding: 0.2rem 0.2rem;
+    border-radius: 2px;
+  }
+
+  .login_image {
+    grid-row: 2/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .svgstyle {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .svgstyle svg {
+    transform: rotate(360deg);
+    width: 20rem;
+    height: 20rem;
+  }
+  #register-link{
+    margin-left: 4.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+

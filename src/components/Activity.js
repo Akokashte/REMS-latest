@@ -12,7 +12,7 @@ const Activity = () => {
                 <div className="sports_card_container">
                     <SportsCard img={'tycondo.jpg'} name={'Taekwondo'}/>
                     <SportsCard img={'primary.png'} name={'Fun Activities'}/>
-                    <SportsCard img={'yoga.jpg'} name={'Yoga'}/>
+                    <SportsCard img={'drawing.jpg'} name={'Drawing'}/>
                     <SportsCard img={'sketing.jpg'} name={'Skating'}/>
                 </div>
             </section>

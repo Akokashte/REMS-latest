@@ -2,7 +2,7 @@ import '../styles/home.css'
 import Counter from './Counter';
 import ExamPrepCarausel from './ExamPrepCarausel';
 import { NavLink } from 'react-router-dom';
-import { links_data,quick_links } from './links_data';
+import { links_data } from './links_data';
 import YtVideo from './YtVideo';
 import Footer from './Footer';
 
@@ -77,28 +77,6 @@ const Home = () => {
       </div>
       <Counter />
       <ExamPrepCarausel />
-
-      <div className='home6'>
-        <div className='home6info'>
-          <div className='info'>
-            <h1>Quick Links</h1>
-          </div>
-          <div className='links'>
-            {
-              quick_links.map((curElem,index)=>(
-              <div className='basicinfo' key={index}>
-                <div className='basicinfoimg'>
-                {curElem.image}
-                </div>
-                <div className='basicinfohead'>
-                  <h1>{curElem.title}</h1>
-                </div>
-              </div>
-              ))
-            }
-          </div>
-        </div>
-      </div>
     <Footer />
     </>
   )

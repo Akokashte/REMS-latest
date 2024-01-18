@@ -1,6 +1,7 @@
 import React from "react"
 import '../styles/footer.css'
 import { GrYoutube, GrFacebook, GrInstagram } from 'react-icons/gr';
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -30,9 +31,9 @@ const Footer = () => {
                 </div>
                 <div id='copyright-area'>
                     <div id='copyright-area-socialmedia'>
-                        <GrYoutube size={42} color='#832996' />
-                        <GrInstagram size={32} color='#832996' />
-                        <GrFacebook size={32} color='#832996' />
+                        <NavLink target="__blank" to={"https://www.youtube.com/@rotaryschoolliveevent4606"}><GrYoutube size={42} color='#832996' /></NavLink>
+                        <NavLink target="__blank" to={"https://www.facebook.com/RotaryEMSKhed/"}><GrFacebook size={32} color='#832996' /></NavLink>
+                        <NavLink target="__blank" to={"https://www.instagram.com/rotaryems_khed/"}><GrInstagram size={32} color='#832996' /></NavLink>
                     </div>
                     <div id='copyright-area-copy'>
                         <h2>@Copyright | Privacy Policy | Designed by SARS</h2>

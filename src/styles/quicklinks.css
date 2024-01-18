@@ -1,0 +1,81 @@
+.home6 {
+    width: 100%;
+    min-height: 65vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home6 .home6info {
+    width: 90%;
+    min-height: 50vh;
+    max-height: auto;
+    border-radius: 2rem;
+  }
+  
+  .home6 .home6info .info {
+    width: 100%;
+    min-height: 10vh;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  
+  .home6 .home6info .links {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    width: 100%;
+    height: 40vh;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+  }
+  
+  .home6 .home6info .basicinfo {
+    background-color: white;
+    width: 13.5rem;
+    height: 10rem;
+    border-radius: 1.2rem;
+    transition: transform 0.2s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+  }
+  
+  .home6 .home6info .basicinfo:hover,.home3info .basicinfo:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .home6 .home6info .basicinfo .basicinfoimg {
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  .home6 .home6info .basicinfo .basicinfoimg img {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .home6 .home6info .basicinfo .basicinfohead {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  
+  .home6 .home6info .basicinfo .basicinfohead h1 {
+    font-size: 20px;
+    font-weight: 350;
+    color: var(--bg_text);
+  }
+  
