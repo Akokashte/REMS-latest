@@ -1,9 +1,9 @@
 import React from 'react'
 import '../styles/admissionpro.css'
 import Collapsible from 'react-collapsible'
-import EnquiryForm from './EnquiryForm'
-import Quicklinks from './QuickLinks'
-import Footer from './Footer'
+import EnquiryForm from '../components/EnquiryForm'
+import Quicklinks from '../components/QuickLinks'
+import Footer from '../components/Footer'
 
 const Admissionprocess = () => {
   return (

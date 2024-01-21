@@ -1,15 +1,15 @@
-import Home from './components/Home';
+import Home from './pages/Home';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Sports from './components/Sports'
+import Sports from './pages/Sports'
 import Navbar from './components/Navbar';
-import Activity from './components/Activity';
+import Activity from './pages/Activity';
 import Facilities from './components/Facilities';
-import Admissionprocess from './components/Admissionprocess';
+import Admissionprocess from './pages/Admissionprocess';
 import EnquiryForm from './components/EnquiryForm';
-import NotFound from './components/NotFound';
-import Chairman from './components/Chairman';
-import Principal from './components/Principal';
+import NotFound from './pages/NotFound';
+import Chairman from './pages/Chairman';
+import Principal from './pages/Principal';
 
 function App() {
   return (
