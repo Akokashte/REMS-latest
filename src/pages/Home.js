@@ -1,10 +1,10 @@
 import '../styles/home.css'
-import Counter from './Counter';
-import ExamPrepCarausel from './ExamPrepCarausel';
+import Counter from '../components/Counter';
+import ExamPrepCarausel from '../components/ExamPrepCarausel';
 import { NavLink } from 'react-router-dom';
-import { links_data } from './links_data';
-import YtVideo from './YtVideo';
-import Footer from './Footer';
+import { links_data } from '../components/links_data';
+import YtVideo from '../components/YtVideo';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
