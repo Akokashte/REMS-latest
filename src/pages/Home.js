@@ -77,7 +77,6 @@ const Home = () => {
       </div>
       <Counter />
       <ExamPrepCarausel />
-    <Footer />
     </>
   )
 }

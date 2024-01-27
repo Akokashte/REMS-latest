@@ -32,7 +32,6 @@ const Facilities = () => {
                         </div>
                     </div>
                 </section>
-                <Footer />
             </section>
         </>
     )

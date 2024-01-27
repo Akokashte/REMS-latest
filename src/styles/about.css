@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about_para_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.about_para_wrapper p {
+    width: 90%;
+    font-size: 1.5rem;
+    height: auto;
+    text-align: center;
+    line-height: 3rem;
+    color: var(--para_text_color);
+}
+
+.lineAndImage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.lineAndImageWrapper {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.about_line{
+    width: 100%;
+    height: 20vh;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_line div {
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(0deg, rgba(219, 202, 154, 1) 0%, rgba(187, 130, 191, 1) 100%);
+}
+
+.about_students_image{
+    height: 525px;
+    width: 100%;
+}
+
+.about_students_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover contain;
+}
