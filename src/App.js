@@ -8,8 +8,12 @@ import Facilities from './components/Facilities';
 import Admissionprocess from './pages/Admissionprocess';
 import EnquiryForm from './components/EnquiryForm';
 import NotFound from './pages/NotFound';
-import Chairman from './pages/Chairman';
-import Principal from './pages/Principal';
+import Chairman from './components/Chairman';
+import Principal from './components/Principal';
+import AboutUs from './pages/AboutUs';
+import NewsCard from './components/NewsCard';
+import GotoTopButton from './components/GotoTopButton';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +21,7 @@ function App() {
     <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<AboutUs />} />
         <Route path='/sports' element={<Sports />} />
         <Route path='/activity' element={<Activity />} />
         <Route path='/facilities' element={<Facilities />} />
@@ -24,8 +29,11 @@ function App() {
         <Route path='/enquiry' element={<EnquiryForm />} />
         <Route path='/chairman' element={<Chairman />} />
         <Route path='/principal' element={<Principal />} />
+        <Route path='/news' element={<NewsCard />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+    <GotoTopButton />
+    <Footer />
     </>
   );
 }

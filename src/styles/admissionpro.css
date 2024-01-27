@@ -4,52 +4,6 @@
     box-sizing: border-box;
 }
 
-.adpro1 {
-    width: 100%;
-    min-height: 120vh;
-    max-height: auto;
-}
-
-.adpro1-head {
-    width: 100%;
-    min-height: 15vh;
-    max-height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.adpro1-head h1{
-    font-size: 2.8rem;
-    color: rgb(211 36 232);
-}
-.adpro1-line {
-    width: 100%;
-    height: 25vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.adpro1-line div {
-    height: 25vh;
-    width: 4px;
-    background: linear-gradient(0deg, rgba(219, 202, 154, 1) 0%, rgba(187, 130, 191, 1) 100%);
-}
-
-.adpro1-image {
-    width: 100%;
-    min-height: 80vh;
-    max-height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.adpro1-image img {
-    height: 65vh;
-    width: 150vh;
-}
-
 .adpro2 {
     width: 100%;
     min-height: 20vh;

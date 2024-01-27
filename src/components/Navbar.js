@@ -21,7 +21,7 @@ const Navbar = () => {
                                 <BiSearch className="search_icon" />
                             </div>
                             <div>
-                                <NavLink className="enquire_btn" to="/enquiry" style={{textDecoration:'none'}}>Enquire Now</NavLink>
+                                <NavLink className="enquire_btn" to="/enquiry" style={{ textDecoration: 'none' }}>Enquire Now</NavLink>
                             </div>
                         </div>
                     </div>
@@ -40,15 +40,7 @@ const Navbar = () => {
                         <nav className="navbar">
                             <ul>
                                 <li><NavLink to="/">Home</NavLink></li>
-                                <li><NavLink>About REMS <AiOutlineDown className="down" /></NavLink>
-                                    <ul className="dropdown">
-                                        <li><NavLink to="#" >About us</NavLink></li>
-                                        <li><NavLink to="/chairman">Chairman's Message</NavLink></li>
-                                        <li><NavLink to="/principal">Principal's Desk</NavLink></li>
-                                        <li><NavLink to="#">News</NavLink></li>
-                                        <li><NavLink to="#">REMS Timeline</NavLink></li>
-                                    </ul>
-                                </li>
+                                <li><NavLink to="/about">About</NavLink></li>
                                 <li><NavLink>Academics <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
                                         <li><NavLink to="#">The Right Curriculum</NavLink></li>

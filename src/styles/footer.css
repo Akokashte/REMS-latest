@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 90vh;
     max-height: auto;
-    position: relative;
+    position:relative;
     background-color: rgb(237, 237, 237);
     /* background-color: blue; */
     display: flex;

@@ -4,21 +4,12 @@ import Collapsible from 'react-collapsible'
 import EnquiryForm from '../components/EnquiryForm'
 import Quicklinks from '../components/QuickLinks'
 import Footer from '../components/Footer'
+import HeadImageLine from '../components/HeadImageLine'
 
 const Admissionprocess = () => {
   return (
     <>
-      <div className="adpro1">
-        <div className="adpro1-head">
-          <h1>Admission Process</h1>
-        </div>
-        <div className="adpro1-line">
-          <div></div>
-        </div>
-        <div className="adpro1-image">
-          <img src="admi2.png" alt="" />
-        </div>
-      </div>
+    <HeadImageLine headLine = {"Admission Process"} featuredImage ={"admifinal.png"}/>
       <div className="adpro2" >
         <input type="button" value="Admission Process" className="ad-btn" />
         <input type="button" value="Documents List" className="ad-btn" />
@@ -97,18 +88,17 @@ const Admissionprocess = () => {
         <div id='age-norms-acc'>
           <div className='acc'>
             <Collapsible trigger="Age Norms" transitionTime={200}>
-            <ul>
+              <ul>
                 <li><span>NURSERY :</span> 3 years complete by 31st December 2024</li>
                 <li><span>JUNIOR KG :</span> 4 years complete by 31st December 2024 </li>
                 <li><span> SENIOR KG :</span> 5 years complete by 31st December 2024</li>
-            </ul>
+              </ul>
             </Collapsible>
           </div>
         </div>
       </div>
       <EnquiryForm />
       <Quicklinks />
-      <Footer />
     </>
 
   )
