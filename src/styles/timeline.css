@@ -6,6 +6,8 @@
 
 .timeline_wrapper {
     width: 100%;
+    height: auto;
+    position: relative;
     display: flex;
     padding: 2rem 0;
     justify-content: center;
@@ -17,7 +19,7 @@
     width: 90%;
     height: 25rem;
     display: flex;
-    /* position: relative; */
+    position: relative;
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
@@ -88,4 +90,50 @@
     border-radius: 2rem;
     cursor: pointer;
     border: 1px rgba(151, 80, 166, 0.6078431373) solid;
+}
+
+.popup_image_container {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: -0.8rem;
+    left: 24rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0);
+}
+.close_option_wrapper {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.close_option {
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 400;
+}
+
+.popup_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.popup_image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.popup_image_container::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1.2rem;
+    left: -100rem;
+    width: 166.2rem;
+    height: 29rem;
+    background-color: rgba(0, 0, 0, 0.2);
 }

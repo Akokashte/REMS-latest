@@ -11,6 +11,7 @@
     justify-content: right;
     font-size: 3rem;
     padding: 0 2rem;
+    z-index: 500;
 } 
 
  .up_arrow {
