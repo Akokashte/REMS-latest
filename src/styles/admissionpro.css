@@ -18,10 +18,15 @@
     justify-content: center;
     align-items: center;
 }
-.adpro1-head h1{
-    font-size: 2.8rem;
-    color: rgb(211 36 232);
+
+.adpro1-head h1 {
+    font-size: 4.5rem;
+    background-image: -webkit-linear-gradient(270deg, #832996 0%, #ebdaba 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .adpro1-line {
     width: 100%;
     height: 25vh;
@@ -102,6 +107,10 @@
     justify-content: center;
 }
 
+.accordion .accordion-inner .acc-head h1 {
+    color: #832996;
+}
+
 .accordion .accordion-inner .acc {
     width: 70%;
     height: auto;
@@ -155,7 +164,11 @@
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.adpro3 #things-to-remember #ttr-head h1 {
     color: #832996;
+    font-weight: 500;
 }
 
 .adpro3 #things-to-remember #ttr-body {
@@ -215,6 +228,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#age-norms #age-norms-head h1 {
+    color: #832996;
+    font-weight: 500;
 }
 
 #age-norms #age-norms-acc {

@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { links_data } from './links_data';
 import YtVideo from './YtVideo';
 import Footer from './Footer';
+import Latestnews from './Latestnews';
 
 const Home = () => {
   return (
@@ -77,7 +78,8 @@ const Home = () => {
       </div>
       <Counter />
       <ExamPrepCarausel />
-    <Footer />
+      <Latestnews />
+      <Footer />
     </>
   )
 }

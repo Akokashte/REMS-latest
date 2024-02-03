@@ -34,7 +34,7 @@ const Admissionprocess = () => {
             <Collapsible trigger="Visiting School" transitionTime={200}>
               <ul>
                 <li><span>Step 1: </span> Parents will need to come to school to understand the culture and ethos of the Institution. Post this visit; parents need to collect the school brochure. The duly filled in admission form has to be submitted to school with all the relevant documents as given below within 7 days.</li>
-                <li><span>Step 2: </span> School is conducting Entrance Exam on the base of last attended class.</li>
+                <li><span>Step 2: </span> School conducts Entrance Exam on the base of last attended class.</li>
               </ul></Collapsible>
           </div>
         </div>
@@ -97,11 +97,11 @@ const Admissionprocess = () => {
         <div id='age-norms-acc'>
           <div className='acc'>
             <Collapsible trigger="Age Norms" transitionTime={200}>
-            <ul>
+              <ul>
                 <li><span>NURSERY :</span> 3 years complete by 31st December 2024</li>
                 <li><span>JUNIOR KG :</span> 4 years complete by 31st December 2024 </li>
                 <li><span> SENIOR KG :</span> 5 years complete by 31st December 2024</li>
-            </ul>
+              </ul>
             </Collapsible>
           </div>
         </div>
