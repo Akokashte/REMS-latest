@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/activity.css'
-import SportsCard from "./SportsCard";
+import SportsCard from "../components/SportsCard";
 
 const Activity = () => {
     return (
