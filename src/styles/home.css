@@ -104,6 +104,7 @@
   max-height: auto;
   display: flex;
   justify-content: center;
+  /* background-color: red; */
   gap: 30rem;
 }
 
@@ -297,4 +298,3 @@
   max-height: auto;
   background-color: yellow;
 }
-

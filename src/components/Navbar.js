@@ -43,8 +43,8 @@ const Navbar = () => {
                                 <li><NavLink to="/about">About</NavLink></li>
                                 <li><NavLink>Academics <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
-                                        <li><NavLink to="#">The Right Curriculum</NavLink></li>
-                                        <li><NavLink to="#">The Right Faculty</NavLink></li>
+                                        <li><NavLink to="/curriculum">The Right Curriculum</NavLink></li>
+                                        <li><NavLink to="/rightfaculty">The Right Faculty</NavLink></li>
                                         <li><NavLink to="/activity">Activities</NavLink></li>
                                         <li><NavLink to="#">Councelling</NavLink></li>
                                     </ul>
@@ -52,7 +52,7 @@ const Navbar = () => {
                                 <li><NavLink>Admission <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
                                         <li><NavLink to="/admissionprocess">Admission Process</NavLink></li>
-                                        <li><NavLink to="#">Policies</NavLink></li>
+                                        <li><NavLink to="/admissionpolicy">Policies</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink>Events <AiOutlineDown className="down" /></NavLink>
