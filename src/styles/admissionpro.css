@@ -56,6 +56,10 @@
     justify-content: center;
 }
 
+.accordion .accordion-inner .acc-head h1 {
+    color: #832996;
+}
+
 .accordion .accordion-inner .acc {
     width: 70%;
     height: auto;
@@ -109,7 +113,11 @@
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.adpro3 #things-to-remember #ttr-head h1 {
     color: #832996;
+    font-weight: 500;
 }
 
 .adpro3 #things-to-remember #ttr-body {
@@ -169,6 +177,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#age-norms #age-norms-head h1 {
+    color: #832996;
+    font-weight: 500;
 }
 
 #age-norms #age-norms-acc {

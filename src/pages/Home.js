@@ -4,7 +4,7 @@ import ExamPrepCarausel from '../components/ExamPrepCarausel';
 import { NavLink } from 'react-router-dom';
 import { links_data } from '../components/links_data';
 import YtVideo from '../components/YtVideo';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 
 const Home = () => {
   return (

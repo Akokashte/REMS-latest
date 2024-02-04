@@ -3,13 +3,13 @@ import '../styles/admissionpro.css'
 import Collapsible from 'react-collapsible'
 import EnquiryForm from '../components/EnquiryForm'
 import Quicklinks from '../components/QuickLinks'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 import HeadImageLine from '../components/HeadImageLine'
 
 const Admissionprocess = () => {
   return (
     <>
-    <HeadImageLine headLine = {"Admission Process"} featuredImage ={"admifinal.png"}/>
+      <HeadImageLine headLine={"Admission Process"} featuredImage={"admifinal.png"} />
       <div className="adpro2" >
         <input type="button" value="Admission Process" className="ad-btn" />
         <input type="button" value="Documents List" className="ad-btn" />
@@ -25,7 +25,7 @@ const Admissionprocess = () => {
             <Collapsible trigger="Visiting School" transitionTime={200}>
               <ul>
                 <li><span>Step 1: </span> Parents will need to come to school to understand the culture and ethos of the Institution. Post this visit; parents need to collect the school brochure. The duly filled in admission form has to be submitted to school with all the relevant documents as given below within 7 days.</li>
-                <li><span>Step 2: </span> School is conducting Entrance Exam on the base of last attended class.</li>
+                <li><span>Step 2: </span> School conducts Entrance Exam on the base of last attended class.</li>
               </ul></Collapsible>
           </div>
         </div>
