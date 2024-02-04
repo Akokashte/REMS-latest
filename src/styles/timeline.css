@@ -111,6 +111,7 @@
 
 .close_option {
     font-size: 1.8rem;
+    color: white;
     cursor: pointer;
     z-index: 400;
 }
@@ -135,5 +136,5 @@
     left: -100rem;
     width: 166.2rem;
     height: 29rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(45, 44, 44, 0.196);
 }

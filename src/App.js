@@ -14,6 +14,8 @@ import AboutUs from './pages/AboutUs';
 import NewsCard from './components/NewsCard';
 import GotoTopButton from './components/GotoTopButton';
 import Footer from './components/Footer';
+import Curriculum from './pages/Curriculum';
+import RightFaculty from './pages/RightFaculty';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path='/chairman' element={<Chairman />} />
         <Route path='/principal' element={<Principal />} />
         <Route path='/news' element={<NewsCard />} />
+        <Route path='/curriculum' element={<Curriculum />} />
+        <Route path='/rightfaculty' element={<RightFaculty />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     <GotoTopButton />
