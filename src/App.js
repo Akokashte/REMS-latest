@@ -14,11 +14,12 @@ import AboutUs from './pages/AboutUs';
 import NewsCard from './components/NewsCard';
 import GotoTopButton from './components/GotoTopButton';
 import Footer from './components/Footer';
+import Admissionpolicy from './pages/Admissionpolicy';
 
 function App() {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
@@ -26,14 +27,15 @@ function App() {
         <Route path='/activity' element={<Activity />} />
         <Route path='/facilities' element={<Facilities />} />
         <Route path='/admissionprocess' element={<Admissionprocess />} />
+        <Route path='/admissionpolicy' element={<Admissionpolicy />} />
         <Route path='/enquiry' element={<EnquiryForm />} />
         <Route path='/chairman' element={<Chairman />} />
         <Route path='/principal' element={<Principal />} />
         <Route path='/news' element={<NewsCard />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-    <GotoTopButton />
-    <Footer />
+      <GotoTopButton />
+      <Footer />
     </>
   );
 }

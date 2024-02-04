@@ -52,7 +52,7 @@ const Navbar = () => {
                                 <li><NavLink>Admission <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
                                         <li><NavLink to="/admissionprocess">Admission Process</NavLink></li>
-                                        <li><NavLink to="#">Policies</NavLink></li>
+                                        <li><NavLink to="/admissionpolicy">Policies</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink>Events <AiOutlineDown className="down" /></NavLink>

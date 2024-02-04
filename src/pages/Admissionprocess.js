@@ -3,13 +3,13 @@ import '../styles/admissionpro.css'
 import Collapsible from 'react-collapsible'
 import EnquiryForm from '../components/EnquiryForm'
 import Quicklinks from '../components/QuickLinks'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 import HeadImageLine from '../components/HeadImageLine'
 
 const Admissionprocess = () => {
   return (
     <>
-    <HeadImageLine headLine = {"Admission Process"} featuredImage ={"admifinal.png"}/>
+      <HeadImageLine headLine={"Admission Process"} featuredImage={"admifinal.png"} />
       <div className="adpro2" >
         <input type="button" value="Admission Process" className="ad-btn" />
         <input type="button" value="Documents List" className="ad-btn" />

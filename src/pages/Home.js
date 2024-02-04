@@ -4,7 +4,7 @@ import ExamPrepCarausel from '../components/ExamPrepCarausel';
 import { NavLink } from 'react-router-dom';
 import { links_data } from '../components/links_data';
 import YtVideo from '../components/YtVideo';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -77,11 +77,6 @@ const Home = () => {
       </div>
       <Counter />
       <ExamPrepCarausel />
-<<<<<<< HEAD:src/components/Home.js
-      <Latestnews />
-      <Footer />
-=======
->>>>>>> bb5f33011733dfd2f9802922575a4ed85d217b0b:src/pages/Home.js
     </>
   )
 }
