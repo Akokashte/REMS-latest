@@ -9,7 +9,9 @@
     flex-direction: column;
     gap: 3rem;
 }
-
+#feerules{
+    padding: 2rem;
+}
 #feerules h1 {
     font-size: 40px;
     font-weight: 500;
@@ -84,14 +86,14 @@
 
 #main-outer .FAQ {
     width: 90%;
-    height: 80vh;
-    max-height: auto;
+    height: auto;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    padding: 2rem 0;
     border-radius: 1rem;
 }
 

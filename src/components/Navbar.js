@@ -43,8 +43,8 @@ const Navbar = () => {
                                 <li><NavLink to="/about">About</NavLink></li>
                                 <li><NavLink>Academics <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
-                                        <li><NavLink to="#">The Right Curriculum</NavLink></li>
-                                        <li><NavLink to="#">The Right Faculty</NavLink></li>
+                                        <li><NavLink to="/curriculum">The Right Curriculum</NavLink></li>
+                                        <li><NavLink to="/rightfaculty">The Right Faculty</NavLink></li>
                                         <li><NavLink to="/activity">Activities</NavLink></li>
                                         <li><NavLink to="#">Councelling</NavLink></li>
                                     </ul>

@@ -1,0 +1,70 @@
+.faculty_class_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    background: rgba(220, 118, 3, 0.0392156863);
+}
+
+.faculty_head_container {
+    width: 90%;
+}
+
+.faculty_head_container h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: transparent;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b46f9d), color-stop(55%, #b46f9d), to(rgba(220, 118, 3, 0.39))) no-repeat;
+    background: linear-gradient(180deg, #b46f9d 0%, #b46f9d 55%, rgba(220, 118, 3, 0.39) 100%) no-repeat;
+    -webkit-background-clip: text;
+    padding: 1.2rem 0;
+    line-height: 1;
+}
+
+.center_faculty_class_container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.faculty_category_card {
+    width: 26rem;
+    padding: 2rem;
+    height: 28rem;
+    border-radius: 2rem;
+    background-color: white;
+    border: 1px solid rgba(151, 80, 166, 0.4039215686);
+}
+
+.category_icon_text {
+    height: 9.8rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.category_icon_text:first-child {
+    font-size: 8rem;
+    color: #0d6efd;
+}
+
+.category_icon_text h2 {
+    font-size: 2.4rem;
+    color: #832996;
+    line-height: 100%;
+}
+
+.category_description p {
+    height: auto;
+    text-align: justify;
+    color: #212529;
+    word-spacing: -0.1rem;
+    line-height: 2.1;
+    font-size: 1.2rem;
+}
