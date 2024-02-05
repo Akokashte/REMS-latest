@@ -57,9 +57,9 @@ const Navbar = () => {
                                 </li>
                                 <li><NavLink>Events <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
-                                        <li><NavLink to="#">Annual Events</NavLink></li>
-                                        <li><NavLink to="#">Achievements</NavLink></li>
-                                        <li><NavLink to="#">Gallery</NavLink></li>
+                                        <li><NavLink to="annualevents">Annual Events</NavLink></li>
+                                        <li><NavLink to="achievements">Achievements</NavLink></li>
+                                        <li><NavLink to="gallery">Gallery</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink to="#">Infrastructure</NavLink></li>

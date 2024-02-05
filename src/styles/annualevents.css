@@ -1,0 +1,24 @@
+.events-outer {
+    width: 100%;
+    height: 210vh;
+    max-height: auto;
+    background-color: red;
+}
+
+.events-outer .cultural-events {
+    width: 100%;
+    height: 70vh;
+    background-color: blue;
+}
+
+.events-outer .sports {
+    width: 100%;
+    height: 70vh;
+    background-color: green;
+}
+
+.events-outer .exhibitions {
+    width: 100%;
+    height: 70vh;
+    background-color: yellow;
+}

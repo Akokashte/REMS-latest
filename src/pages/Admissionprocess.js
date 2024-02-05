@@ -47,7 +47,7 @@ const Admissionprocess = () => {
                   1. Original Transfer Certificate/ Bonafide certificate from the previous school (for students seeking admission from class 2 onwards). The school leaving certificate or transfer School UDISE Code & Students ID certificate should bear the recognition number of that school.
                 </li>
                 <li>
-                  2.1 Passport Size Photographs- Student (Recent)
+                  2. 1 Passport Size Photographs- Student (Recent)
                 </li>
                 <li>
                   3. Photocopies of Report Cards of Previous 2 Years

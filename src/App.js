@@ -15,6 +15,9 @@ import NewsCard from './components/NewsCard';
 import GotoTopButton from './components/GotoTopButton';
 import Footer from './components/Footer';
 import Admissionpolicy from './pages/Admissionpolicy';
+import Gallery from './pages/Gallery';
+import Achievements from './pages/Achievements';
+import Annualevents from './pages/Annualevents';
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
         <Route path='/admissionprocess' element={<Admissionprocess />} />
         <Route path='/admissionpolicy' element={<Admissionpolicy />} />
         <Route path='/enquiry' element={<EnquiryForm />} />
+        <Route path='/annualevents' element={<Annualevents />} />
+        <Route path='/achievements' element={<Achievements />} />
+        <Route path='/gallery' element={<Gallery />} />
         <Route path='/chairman' element={<Chairman />} />
         <Route path='/principal' element={<Principal />} />
         <Route path='/news' element={<NewsCard />} />
