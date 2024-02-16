@@ -46,7 +46,7 @@ const Navbar = () => {
                                         <li><NavLink to="/curriculum">The Right Curriculum</NavLink></li>
                                         <li><NavLink to="/rightfaculty">The Right Faculty</NavLink></li>
                                         <li><NavLink to="/activity">Activities</NavLink></li>
-                                        <li><NavLink to="#">Councelling</NavLink></li>
+                                        {/* <li><NavLink to="#">Councelling</NavLink></li> */}
                                     </ul>
                                 </li>
                                 <li><NavLink>Admission <AiOutlineDown className="down" /></NavLink>
@@ -62,7 +62,7 @@ const Navbar = () => {
                                         <li><NavLink to="#">Gallery</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink to="#">Infrastructure</NavLink></li>
+                                <li><NavLink to="/infrastructure">Infrastructure</NavLink></li>
                                 <li><NavLink to="/facilities">Facilities</NavLink></li>
                             </ul>
                         </nav>

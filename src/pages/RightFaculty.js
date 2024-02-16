@@ -1,16 +1,15 @@
 import React from "react";
 import FacultyCategoryCard from "../components/FacultyCategoryCard";
 import "../styles/right_faculty.css";
+import HeadImageLine from "../components/HeadImageLine";
 
 const RightFaculty = () => {
     return (
         <>
+            <HeadImageLine headLine={"The Right Faculty"} featuredImage={'admifinal.png'}/>
             <section className="faculty_class_container">
-            <div className="faculty_head_container">
-                <h1>The Right Faculty</h1>
-            </div>
                 <div className="center_faculty_class_container">
-                    <FacultyCategoryCard />
+                    <FacultyCategoryCard  />
                 </div>
             </section>
         </>
@@ -21,7 +20,6 @@ export default RightFaculty;
 
 
 // Name :
-// phone number :
-// Classes :
 // Experience :
-// Degree Earned :
+// phone number :
+// Qualification :

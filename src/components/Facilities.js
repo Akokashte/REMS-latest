@@ -2,7 +2,6 @@ import React from "react";
 import HeroSectionImageBox from "./HeroSectionImageBox";
 import { NavLink } from "react-router-dom";
 import facility_cards from "./facility_cards";
-import Footer from "./Footer";
 
 const Facilities = () => {
     return (
@@ -28,7 +27,6 @@ const Facilities = () => {
                                     </div>
                                 ))
                             }
-
                         </div>
                     </div>
                 </section>
