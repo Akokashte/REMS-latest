@@ -9,9 +9,11 @@
     flex-direction: column;
     gap: 3rem;
 }
-#feerules{
+
+#feerules {
     padding: 2rem;
 }
+
 #feerules h1 {
     font-size: 40px;
     font-weight: 500;

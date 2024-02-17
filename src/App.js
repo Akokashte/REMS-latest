@@ -15,14 +15,11 @@ import NewsCard from './components/NewsCard';
 import GotoTopButton from './components/GotoTopButton';
 import Footer from './components/Footer';
 import Admissionpolicy from './pages/Admissionpolicy';
-<<<<<<< HEAD
-import Gallery from './pages/Gallery';
-import Achievements from './pages/Achievements';
-import Annualevents from './pages/Annualevents';
-=======
 import Curriculum from './pages/Curriculum';
 import RightFaculty from './pages/RightFaculty';
->>>>>>> 998f018dd9826e58ffaef0d336070ff942f94177
+import Annualevents from './pages/Annualevents';
+import Gallery from './pages/Gallery';
+import Achievements from './pages/Achievements';
 
 function App() {
   return (

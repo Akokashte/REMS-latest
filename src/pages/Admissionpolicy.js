@@ -67,27 +67,27 @@ const Admissionpolicy = () => {
                     <div className='FAQ'>
                         <h1>FAQs</h1>
                         <div className='acc'>
-                            <Collapsible trigger="1. How is ROTARY ENGLISH MEDIUM SCHOOL different from other international schools around?" transitionTime={100} >
+                            <Collapsible trigger="1. How is ROTARY ENGLISH MEDIUM SCHOOL different from other international schools around?" transitionTime={75} >
                                 <h3>Ans- Over the Past 12 years ROTARY ENGLISH MEDIUM SCHOOL has been known for its "Excellence in Education." Our focus is on delivering a high-quality teaching and learning, designing a broad and rich curriculum including diverse co- curricular opportunities and providing a supportive guidance programme.</h3>
                             </Collapsible>
                         </div>
                         <div className='acc'>
-                            <Collapsible trigger="2. Is there a school uniform?" transitionTime={100} >
+                            <Collapsible trigger="2. Is there a school uniform?" transitionTime={75} >
                                 <h3>Ans- Yes, we have school uniforms for students from Grade 1 to Grade 12.</h3>
                             </Collapsible>
                         </div>
                         <div className='acc'>
-                            <Collapsible trigger="3. Are your teachers working in the school well qualified?" transitionTime={100} >
+                            <Collapsible trigger="3. Are your teachers working in the school well qualified?" transitionTime={75} >
                                 <h3> "Ans- The teaching staff is highly qualified in their respective fields.</h3>
                             </Collapsible>
                         </div>
                         <div className='acc'>
-                            <Collapsible trigger="4. What is the age criterion for admissions?" transitionTime={100} >
+                            <Collapsible trigger="4. What is the age criterion for admissions?" transitionTime={75} >
                                 <h3>Ans- The REMS has an age policy which it follows diligently for all admission applications. While applying for Grade 1 the child must have completed 6 years by April.</h3>
                             </Collapsible>
                         </div>
                         <div className='acc'>
-                            <Collapsible trigger="5. What is the teacher student ratio in the school?" transitionTime={100} >
+                            <Collapsible trigger="5. What is the teacher student ratio in the school?" transitionTime={75} >
                                 <h3>Ans- In REMS, the teacher student ratio is 1:1.5</h3>
                             </Collapsible>
                         </div>

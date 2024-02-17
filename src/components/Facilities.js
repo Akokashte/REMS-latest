@@ -7,8 +7,8 @@ import Footer from "./Footer";
 const Facilities = () => {
     return (
         <>
+            <HeroSectionImageBox />
             <section id="my_school_facility">
-                <HeroSectionImageBox />
                 <section className="facility_section">
                     <div className="inner_facility_section">
                         <div className="top_heading">
