@@ -9,7 +9,7 @@ import HeadImageLine from '../components/HeadImageLine'
 const Admissionprocess = () => {
   return (
     <>
-      <HeadImageLine headLine={"Admission Process"} featuredImage={"admifinal.png"} />
+      <HeadImageLine headLine={"Admission Process"} featuredImage={"admissionfinal.png"} />
       <div className="adpro2" >
         <input type="button" value="Admission Process" className="ad-btn" />
         <input type="button" value="Documents List" className="ad-btn" />

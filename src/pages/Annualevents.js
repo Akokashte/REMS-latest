@@ -20,11 +20,11 @@ const Annualevents = () => {
 
                         <div className='events-theatre'>
                             <h1>Volleyball</h1>
-                            <img src="holleyball.jpeg" alt="" />
+                            <img src="cricket.jpg" alt="" />
                         </div>
                         <div className='events-theatre'>
                             <h1>Cricket</h1>
-                            <img src="holleyball.jpeg" alt="" />
+                            <img src="football.jpg" alt="" />
                         </div>
                     </div>
 
@@ -41,15 +41,15 @@ const Annualevents = () => {
                     <div className='events-imgs'>
                         <div className='events-theatre'>
                             <h1>Theatre</h1>
-                            <img src="holleyball.jpeg" alt="" />
+                            <img src="theatre.jpg" alt="" />
                         </div>
                         <div className='events-theatre'>
                             <h1>Dance</h1>
-                            <img src="holleyball.jpeg" alt="" />
+                            <img src="dance.jpg" alt="" />
                         </div>
                         <div className='events-theatre'>
                             <h1>Music</h1>
-                            <img src="holleyball.jpeg" alt="" />
+                            <img src="piano.jpg" alt="" />
                         </div>
                     </div>
                 </div>

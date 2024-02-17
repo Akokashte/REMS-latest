@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
-    background: rgba(220, 118, 3, 0.0392156863);
 }
 
 .faculty_head_container {
@@ -38,7 +37,15 @@
     height: 28rem;
     border-radius: 2rem;
     background-color: white;
+    cursor: pointer;
     border: 1px solid rgba(151, 80, 166, 0.4039215686);
+    transition: transform 0.3s ease-in-out,box-shadow 0.1s ease-in-out;
+}
+
+.faculty_category_card:hover {
+   transform: translate3d(0,0,2rem);
+   transform: scale(1.1);
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .category_icon_text {
@@ -56,6 +63,7 @@
 
 .category_icon_text h2 {
     font-size: 2.4rem;
+    text-transform: capitalize;
     color: #832996;
     line-height: 100%;
 }

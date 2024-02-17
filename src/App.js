@@ -17,8 +17,10 @@ import Footer from './components/Footer';
 import Admissionpolicy from './pages/Admissionpolicy';
 import Curriculum from './pages/Curriculum';
 import RightFaculty from './pages/RightFaculty';
+import Infrastructure from './pages/Infrastructure';
+import Teachers from './pages/Teachers';
 import Annualevents from './pages/Annualevents';
-import Gallery from './pages/Gallery';
+import Gallery from './pages/Gallery'
 import Achievements from './pages/Achievements';
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
         <Route path='/news' element={<NewsCard />} />
         <Route path='/curriculum' element={<Curriculum />} />
         <Route path='/rightfaculty' element={<RightFaculty />} />
+        <Route path='/infrastructure' element={<Infrastructure />} />
+        <Route path='/teachers' element={<Teachers />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <GotoTopButton />

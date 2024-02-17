@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/newsCard.css"
 import NewsSingleCard from "./NewsSingleCard";
-import Footer from "./Footer"
+
 const NewsCard = () => {
     return (
         <>

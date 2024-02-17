@@ -60,8 +60,13 @@
     /* background-color: blanchedalmond; */
     display: flex;
     justify-content: center;
+    gap: 1.2rem;
     /* align-items: center; */
     flex-direction: column;
+}
+
+.events-theatre h1 {
+    text-align: center;
 }
 
 .events-imgs {
@@ -72,7 +77,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
+}
+
+.events-imgs img {
+    border-radius: 1.2rem;
 }
 
 .events-outer .cultural-events {
@@ -88,6 +97,7 @@
 .events-outer .cultural-events .events-heading {
     width: 90%;
     height: 12vh;
+    font-size: 1.8rem;
     /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
@@ -120,15 +130,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .events-outer .cultural-events .events-imgs .events-theatre {
-    width: 30%;
+    width: 25%;
     height: 60vh;
     /* background-color: blanchedalmond; */
     display: flex;
     justify-content: center;
+    gap: 1.2rem;
     /* align-items: center; */
     flex-direction: column;
 }

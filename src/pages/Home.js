@@ -48,7 +48,7 @@ const Home = () => {
                   We welcome you to join the Rotary family and to give your child the best when it comes to an integrated, holistic and empowering learning experience.
                   Choose what you'd like to learn from us & grab it from our family who is passionate about
                   teaching students to chase their dreams & dive into the sea of success.</h2> <br />
-                <NavLink to="/" className="read_btn">Read More</NavLink>
+                <NavLink to="/about" className="read_btn">Read More</NavLink>
               </div>
             </div>
           </div>
