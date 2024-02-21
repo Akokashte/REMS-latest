@@ -152,13 +152,11 @@ header {
 
 .head2_inner_container .logo_container .logo_title h1 {
     font-weight: 400;
-    font-family: 'Young Serif', serif;
     text-align: center;
     color: var(--text_pink);
 }
 
 .head2_inner_container .logo_container .logo_title span {
-    font-family: 'Teko', sans-serif;
     font-size: var(--small);
     font-weight: 400;
 }

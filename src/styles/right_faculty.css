@@ -20,7 +20,7 @@
     padding: 2rem;
     height: 28rem;
     border-radius: 2rem;
-    background-color: white;
+    background-color: var(--bg_light);
     cursor: pointer;
     border: 1px solid var(--faculty_card_border_color);
     transition: transform 0.3s ease-in-out,box-shadow 0.1s ease-in-out;
