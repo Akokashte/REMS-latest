@@ -5,8 +5,7 @@
 }
 
 #my_school_facility {
-    height: 81.5vh;
-    max-height: auto;
+    height: auto;
     width: 100%;
 }
 
@@ -91,8 +90,7 @@
 
 /* carousel ends */
 .facility_section {
-    min-height: 100vh;
-    max-height: auto;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;

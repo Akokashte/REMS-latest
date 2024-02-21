@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../styles/activity.css'
 import SportsCard from "../components/SportsCard";
 
 const Activity = () => {
+    useEffect(()=>{
+        window.scrollTo({ top: 0})
+    },[])
     return (
         <>
             <section className="activity">

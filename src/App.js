@@ -17,6 +17,8 @@ import Footer from './components/Footer';
 import Admissionpolicy from './pages/Admissionpolicy';
 import Curriculum from './pages/Curriculum';
 import RightFaculty from './pages/RightFaculty';
+import Infrastructure from './pages/Infrastructure';
+import Teachers from './pages/Teachers';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
         <Route path='/news' element={<NewsCard />} />
         <Route path='/curriculum' element={<Curriculum />} />
         <Route path='/rightfaculty' element={<RightFaculty />} />
+        <Route path='/infrastructure' element={<Infrastructure />} />
+        <Route path='/teachers' element={<Teachers />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <GotoTopButton />

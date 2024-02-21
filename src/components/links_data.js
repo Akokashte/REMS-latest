@@ -8,19 +8,23 @@ const quickIconStyle = {color:"purple",fontSize:"2.5rem"}
 const links_data = [
     {
         img:<FaWpforms style={iconStyle} />,
-        headline:"Admission Process"
+        headline:"Admission Process",
+        link:"admissionprocess"
     },
     {
         img:<FaIndianRupeeSign style={iconStyle}/>,
-        headline:"Fee Structure"
+        headline:"Fee Structure",
+        link:"admissionpolicy"
     },
     {
         img:<FaLocationDot style={iconStyle}/>,
-        headline:"Location"
+        headline:"Location",
+        link:"infrastructure"
     },
     {
         img:<FaEnvelopeOpenText style={iconStyle}/>,
-        headline:"Enquiry Form"
+        headline:"Enquiry Form",
+        link:"enquiry"
     },
 ]
 

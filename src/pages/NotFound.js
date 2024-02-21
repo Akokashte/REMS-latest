@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import '../styles/notfound.css'
+
 const NotFound = () => {
+     useEffect(() => {
+          window.scrollTo({ top: 0 })
+     }, [])
+
      return (
           <div className='error-container'>
                <div className='section-error-image'>
