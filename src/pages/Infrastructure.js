@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/infrastructure.css";
 import HeadImageLine from "../components/HeadImageLine";
-import InfraCard from "../components/InfraCard";
 
 const Infrastructure = () => {
+    useEffect(()=>{
+        window.scrollTo({ top: 0})
+    },[])
 
     return (
         <>

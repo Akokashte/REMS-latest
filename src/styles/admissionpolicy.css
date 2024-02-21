@@ -2,7 +2,6 @@
     width: 100%;
     min-height: 200vh;
     max-height: auto;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,24 +12,24 @@
     padding: 2rem;
 }
 #feerules h1 {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: var(--large);
+    font-weight: var(--mid);
 }
 
 #admin-wit h1 {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: var(--large);
+    font-weight: var(--mid);
 }
 
 .FAQ h1 {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: var(--large);
+    font-weight: var(--mid);
 }
 
 #main-outer #feerules {
     width: 90%;
     height: 70vh;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    background: var(--primary_bg_gradient);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +37,13 @@
     border-radius: 1rem;
     gap: 0.5rem;
 }
-
+#main-outer #feerules li{
+    font-size: var(--small);
+    color: var(--para_dark_color);
+}
 #main-outer .actualrules {
     width: 100%;
     height: 80%;
-    /* background-color: aqua; */
-    font-size: larger;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,25 +60,28 @@
 }
 
 #main-outer .actualrules span {
-    font-weight: 600;
+    font-weight: var(--bold);
 }
 
 #main-outer #admin-wit {
     width: 90%;
-    height: 80vh;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    height: auto;
+    background: var(--primary_bg_gradient);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 1rem;
+    padding: 2rem 2rem;
     gap: 0.5rem;
 }
-
+#main-outer #admin-wit li {
+    font-size: var(--small);
+    color: var(--para_dark_color);
+}
 #main-outer .outer-FAQ {
     width: 100%;
     height: 100vh;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +90,7 @@
 #main-outer .FAQ {
     width: 90%;
     height: auto;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+    background: var(--primary_bg_gradient);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +103,10 @@
 .acc {
     width: 80%;
     height: auto;
-    background-color: white;
+    font-size: var(--small);
+    font-weight: var(--mid);
+    color:var(--text_dark);
+    background-color: var(--bg_light);
     border: 1px solid #9750a6;
     padding: 2vh;
     border-radius: 1rem;
@@ -108,6 +114,7 @@
 }
 
 .outer-FAQ .FAQ .acc h3 {
-    font-size: 15px;
-    font-weight: 400;
+    font-size: var(--extra_small);
+    font-weight: var(--regular);
+    padding-top: 1.2rem;
 }

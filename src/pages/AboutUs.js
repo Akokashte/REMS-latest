@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeadImageLine from "../components/HeadImageLine";
 import "../styles/about.css"
 import Counter from '../components/Counter'
@@ -9,6 +9,10 @@ import Timeline from "../components/Timeline";
 import VisionAndMission from "../components/VisionAndMission";
 
 const AboutUs = () => {
+    useEffect(()=>{
+        window.scrollTo({ top: 0})
+    },[])
+    
     return (
         <>
             <HeadImageLine featuredImage={"rems.png"} headLine={"about rotary english medium school"} isAbout={true} />

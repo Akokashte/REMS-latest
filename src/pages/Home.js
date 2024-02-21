@@ -1,12 +1,23 @@
 import '../styles/home.css'
 import Counter from '../components/Counter';
 import ExamPrepCarausel from '../components/ExamPrepCarausel';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { links_data } from '../components/links_data';
 import YtVideo from '../components/YtVideo';
-// import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 const Home = () => {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
+  const redirectTo = (link) => {
+    console.log(link)
+    navigate(link)
+  }
+
   return (
     <>
       <div className='home1'>
@@ -48,7 +59,7 @@ const Home = () => {
                   We welcome you to join the Rotary family and to give your child the best when it comes to an integrated, holistic and empowering learning experience.
                   Choose what you'd like to learn from us & grab it from our family who is passionate about
                   teaching students to chase their dreams & dive into the sea of success.</h2> <br />
-                <NavLink to="/" className="read_btn">Read More</NavLink>
+                <NavLink to="/about" className="read_btn">Read More</NavLink>
               </div>
             </div>
           </div>
@@ -62,7 +73,7 @@ const Home = () => {
           <div className='links'>
             {
               links_data.map((curElem, index) => (
-                <div className='basicinfo' key={index}>
+                <div className='basicinfo' key={index} onClick={()=>redirectTo(curElem.link)}>
                   <div className='basicinfoimg'>
                     {curElem.img}
                   </div>

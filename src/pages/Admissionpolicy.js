@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeadImageLine from '../components/HeadImageLine'
 import Collapsible from 'react-collapsible'
 import '../styles/admissionpolicy.css'
 
 const Admissionpolicy = () => {
+    useEffect(()=>{
+        window.scrollTo({ top: 0})
+    },[])
+
     return (
         <>
             <div id='main-outer'>

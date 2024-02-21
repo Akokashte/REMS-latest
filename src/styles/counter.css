@@ -6,12 +6,10 @@
 .wrapper {
     width: 100%;
     min-height: 60vh;
-    /* transform: translate(-50%, -50%); */
     display: flex;
     justify-content:center;
     align-items: center;
     gap: 5rem;
-    /* background-color: blue; */
   }
   .container {
     width: 28vmin;
@@ -21,30 +19,28 @@
     justify-content: space-around;
     padding: 1em 0;
     position: relative;
-    font-size: 16px;
+    /* font-size: var(--small); */
     border-radius: 0.5em;
     box-shadow: 0px 0px 10px rgb(191, 191, 191);
-    background-color: rgb(255, 251, 244);
+    background-color: var(--counter_bg_color);
     border-bottom: 10px solid rgb(253, 227, 175);
   }
   i {
-    color: #18f98f;
-    font-size: 2.5em;
     text-align: center;
   }
   span.num {
-    color:black;
+    color: var(--text_dark);
     display: grid;
     place-items: center;
-    font-weight: 600;
-    font-size: 3em;
+    font-weight: var(--bold);
+    font-size: var(--large);
   }
   span.text {
-    color: black;
-    font-size: 1em;
+    color: var(--text_dark);
+    font-size: var(--small);
     text-align: center;
     pad: 0.7em 0;
-    font-weight: 400;
+    font-weight: var(--regular);
     line-height: 0;
   }
   

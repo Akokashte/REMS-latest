@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeadImageLine from "../components/HeadImageLine"
 import "../styles/curriculum.css";
 import CurriculumCard from "../components/CurriculumCard";
 
 const Curriculum = () => {
-
+    useEffect(()=>{
+        window.scrollTo({ top: 0})
+    },[])
 
     return (
         <>

@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/admissionpro.css'
 import Collapsible from 'react-collapsible'
 import EnquiryForm from '../components/EnquiryForm'
 import Quicklinks from '../components/QuickLinks'
-// import Footer from '../components/Footer'
 import HeadImageLine from '../components/HeadImageLine'
 
 const Admissionprocess = () => {
+  useEffect(()=>{
+    window.scrollTo({ top: 0})
+},[])
+
   return (
     <>
       <HeadImageLine headLine={"Admission Process"} featuredImage={"admifinal.png"} />

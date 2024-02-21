@@ -26,14 +26,14 @@
 }
 
 .head_wrapper {
-    font-size: 1.2rem;
+    font-size: var(--small);
     text-align: center;
     text-transform: capitalize;
 }
 
 .head_wrapper h1 {
-    font-weight: 500;
-    color: #dc7603;
+    font-weight: var(--mid);
+    color: var(--txt_orange);
 }
 
 .timeline_cards_collection {
@@ -110,8 +110,8 @@
 }
 
 .close_option {
-    font-size: 1.8rem;
-    color: white;
+    font-size: var(--medium);
+    color: var(--text_light);
     cursor: pointer;
     z-index: 400;
 }

@@ -51,7 +51,7 @@ const CurriculumCard = () => {
                             <h3>{subHeadText}</h3>
                         </div>
                         <div className="paragraph_div">
-                            <div className="school_icon">
+                            <div className="icon">
                                 {icon}
                             </div>
                             <div className="paragraph_container">

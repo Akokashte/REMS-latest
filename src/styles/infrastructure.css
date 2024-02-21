@@ -60,7 +60,7 @@
     text-align: center;
     color: transparent;
     background: -webkit-gradient(linear, left top, left bottom, from(#b46f9d), color-stop(55%, #b46f9d), to(rgba(220, 118, 3, 0.39))) no-repeat;
-    background: linear-gradient(180deg, #b46f9d 0%, #b46f9d 55%, rgba(220, 118, 3, 0.39) 100%) no-repeat;
+    background: var(--head_gardient_color);
     -webkit-background-clip: text;
 }
 
@@ -131,7 +131,7 @@
     text-align: center;
     color: transparent;
     background: -webkit-gradient(linear, left top, left bottom, from(#b46f9d), color-stop(55%, #b46f9d), to(rgba(220, 118, 3, 0.39))) no-repeat;
-    background: linear-gradient(180deg, #b46f9d 0%, #b46f9d 55%, rgba(220, 118, 3, 0.39) 100%) no-repeat;
+    background: var(--head_gardient_color);
     -webkit-background-clip: text;
 }
 
