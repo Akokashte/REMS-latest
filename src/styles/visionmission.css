@@ -38,7 +38,7 @@
     justify-content: center;
     padding: 0 1.2rem;
     border-radius: 0.5rem;
-    background:transparent linear-gradient( 129deg, rgba(220, 118, 3, 0.0705882353) 0%, rgba(131, 41, 150, 0.1215686275) 100% ) 0% 0% no-repeat padding-box;
+    background:var(--vision_mission_gradient_bgcolor);
 }
 
 .center_box:after {

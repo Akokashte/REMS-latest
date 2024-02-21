@@ -19,8 +19,7 @@
     font-size: var(--extra_large);
     text-transform: capitalize;
     color: transparent;
-    background: -webkit-gradient(linear, left top, left bottom, from(#b46f9d), color-stop(55%, #b46f9d), to(rgba(220, 118, 3, 0.39))) no-repeat;
-    background: var(--head_gardient_color);
+    background:var(--head_gardient_color);
     -webkit-background-clip: text;
     line-height: 2;
 }
@@ -37,7 +36,7 @@
 .adpro1-line div {
     height: 100%;
     width: 2px;
-    background: linear-gradient(0deg, rgba(219, 202, 154, 1) 0%, rgba(187, 130, 191, 1) 100%);
+    background: var(--line_color);
 }
 
 .adpro1-image {
@@ -48,5 +47,5 @@
 .adpro1-image img {
     height: 100%;
     width: 100%;
-    object-fit:cover contain;
+    object-fit: cover contain;
 }

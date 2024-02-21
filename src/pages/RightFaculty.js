@@ -10,10 +10,10 @@ const RightFaculty = () => {
 
     return (
         <>
-            <HeadImageLine headLine={"The Right Faculty"} featuredImage={'admifinal.png'}/>
+            <HeadImageLine headLine={"The Right Faculty"} featuredImage={'admifinal.png'} />
             <section className="faculty_class_container">
                 <div className="center_faculty_class_container">
-                    <FacultyCategoryCard  />
+                    <FacultyCategoryCard />
                 </div>
             </section>
         </>

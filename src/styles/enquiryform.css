@@ -137,7 +137,7 @@
     height: 3.6rem;
     border-radius: 0.5rem;
     border: none;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #d3bf98 0%, rgb(218, 143, 222) 100%);
+    background: var(--btn_gradient_background);
     font-size: var(--below_medium);
     color: var(--text_light);
     transition: transform 0.2s ease-in;
@@ -148,6 +148,6 @@
     transform: scale(1, 1);
     background:var(--bg_light);
     border: 1px solid #832996;
-    color: black;
+    color: var(--text_dark);
     cursor: pointer;
 }
