@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/teacherCard.css";
 
-const TeachersCard = ({name,image,experience,qualification}) => {
+const TeachersCard = ({ name, image, experience, qualification }) => {
     return (
         <>
             <div className="teachers_card">
@@ -14,7 +14,7 @@ const TeachersCard = ({name,image,experience,qualification}) => {
                     </div>
                     <div className="teacherexperience">
                         <div className="teach_group"> <span className="headtext">Experience</span><span>{experience}</span></div>
-                        <div className="teach_group"><span className="headtext">Qualification</span><span>{qualification}</span> </div>
+                        <div className="teach_group"><span className="headtext">Qualification</span><span>{qualification.slice(0, 20)}{qualification.length > 20 ? "..." : ""}</span> </div>
                     </div>
                 </div>
             </div>

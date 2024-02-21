@@ -48,5 +48,5 @@
 .adpro1-image img {
     height: 100%;
     width: 100%;
-    object-fit:cover contain;
+    object-fit: cover contain;
 }

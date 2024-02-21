@@ -19,6 +19,9 @@ import Curriculum from './pages/Curriculum';
 import RightFaculty from './pages/RightFaculty';
 import Infrastructure from './pages/Infrastructure';
 import Teachers from './pages/Teachers';
+import Annualevents from './pages/Annualevents';
+import Gallery from './pages/Gallery'
+import Achievements from './pages/Achievements';
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
         <Route path='/admissionprocess' element={<Admissionprocess />} />
         <Route path='/admissionpolicy' element={<Admissionpolicy />} />
         <Route path='/enquiry' element={<EnquiryForm />} />
+        <Route path='/annualevents' element={<Annualevents />} />
+        <Route path='/achievements' element={<Achievements />} />
+        <Route path='/gallery' element={<Gallery />} />
         <Route path='/chairman' element={<Chairman />} />
         <Route path='/principal' element={<Principal />} />
         <Route path='/news' element={<NewsCard />} />
