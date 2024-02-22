@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
+
 }
 
 .teachers_info_inner_section {
@@ -15,7 +16,7 @@
     /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%); */
 }
 
-.subject_name{
+.subject_name {
     font-size: 2rem;
     line-height: 8rem;
     text-transform: capitalize;

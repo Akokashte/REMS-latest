@@ -5,6 +5,7 @@ import EnquiryForm from '../components/EnquiryForm'
 import Quicklinks from '../components/QuickLinks'
 // import Footer from '../components/Footer'
 import HeadImageLine from '../components/HeadImageLine'
+import Accordian from '../components/Accordian'
 
 const Admissionprocess = () => {
   return (
@@ -26,8 +27,10 @@ const Admissionprocess = () => {
               <ul>
                 <li><span>Step 1: </span> Parents will need to come to school to understand the culture and ethos of the Institution. Post this visit; parents need to collect the school brochure. The duly filled in admission form has to be submitted to school with all the relevant documents as given below within 7 days.</li>
                 <li><span>Step 2: </span> School conducts Entrance Exam on the base of last attended class.</li>
-              </ul></Collapsible>
+              </ul>
+            </Collapsible>
           </div>
+          <Accordian ques={'name?'} ans={"sujeet"} />
         </div>
       </div>
       <div className='adpro3'>
@@ -79,6 +82,7 @@ const Admissionprocess = () => {
               </ul>
             </Collapsible>
           </div>
+          <Accordian ques={"list of docs"} ans={"ration card"} />
         </div>
       </div>
       <div id='age-norms'>
