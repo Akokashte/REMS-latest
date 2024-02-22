@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.image_card_container {
+    width: 30rem;
+    height: 100%;
+    position: relative;
+}
+
+.gallery_image_container {
+    width: 100%;
+}
+
+.gallery_image_container img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}

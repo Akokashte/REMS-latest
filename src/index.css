@@ -47,6 +47,8 @@ body {
   --chairman_bg_gradient: linear-gradient(274deg, rgba(131, 41, 150, 0.11) 0%, rgba(220, 118, 3, 0.13) 100%);
   --head_gardient_color: linear-gradient(180deg, #b46f9d 0%, #b46f9d 55%, rgba(220, 118, 3, 0.39) 100%) no-repeat;
   --timeline_circles_gradient_color:linear-gradient(180deg, rgba(220, 118, 3, 0.3215686275) 0%, rgba(131, 41, 150, 0.4862745098) 100%) 0% 0% no-repeat padding-box;
+  --gallery_gardient_bg_color: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(255 160 160) 0%, rgb(189 142 194) 100%);
+
   /* enquiry form btn gradient bg */
   --btn_gradient_background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #d3bf98 0%, rgb(218, 143, 222) 100%);
   --vision_mission_gradient_bgcolor:transparent linear-gradient( 129deg, rgba(220, 118, 3, 0.0705882353) 0%, rgba(131, 41, 150, 0.1215686275) 100% ) 0% 0% no-repeat padding-box;
