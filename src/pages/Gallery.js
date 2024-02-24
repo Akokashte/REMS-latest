@@ -3,7 +3,7 @@ import GalleryImageCard from '../components/GalleryImageCard'
 import "../styles/gallery.css";
 import GalleryCategory from '../components/GalleryCategory';
 import { HiOutlineDownload } from 'react-icons/hi';
-import { GalleryImages } from '../components/GalleryImages';
+import {GalleryImages} from '../api/GalleryImages.api';
 
 const Gallery = () => {
     const totalImageArrayLength = GalleryImages.length

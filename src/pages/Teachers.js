@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/teachers.css";
 import TeachersCard from "../components/TeachersCard";
-import { teachers } from "../components/teachers";
+import { teachers } from "../api/TeachersData.api";
 import { useLocation } from "react-router-dom";
 
 const Teachers = () => {

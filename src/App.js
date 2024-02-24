@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import Sports from './pages/Sports'
 import Navbar from './components/Navbar';
 import Activity from './pages/Activity';
-import Facilities from './components/Facilities';
 import Admissionprocess from './pages/Admissionprocess';
 import EnquiryForm from './components/EnquiryForm';
 import NotFound from './pages/NotFound';
@@ -32,7 +31,6 @@ function App() {
         <Route path='/about' element={<AboutUs />} />
         <Route path='/sports' element={<Sports />} />
         <Route path='/activity' element={<Activity />} />
-        <Route path='/facilities' element={<Facilities />} />
         <Route path='/admissionprocess' element={<Admissionprocess />} />
         <Route path='/admissionpolicy' element={<Admissionpolicy />} />
         <Route path='/enquiry' element={<EnquiryForm />} />

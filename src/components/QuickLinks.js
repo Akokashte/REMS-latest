@@ -1,6 +1,6 @@
 import React from "react"
 import '../styles/quicklinks.css'
-import { quick_links } from './links_data';
+import { quick_links } from "../api/QuickLinksData.api";
 
 const QuickLinks = () => {
     return (

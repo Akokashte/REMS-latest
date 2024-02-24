@@ -11,13 +11,15 @@ const HeadImageLine = (props) => {
                         <div className="adpro1-head">
                             <h1>{headLine}</h1>
                         </div>
-                        : <div style={{ height: "3rem" }}></div>}                <div className="adpro1-line">
+                        : <div style={{ height: "3rem" }}></div>
+                }
+                <div className="adpro1-line">
                     <div></div>
                 </div>
                 <div className="adpro1-image">
                     <img src={featuredImage} alt="" />
                 </div>
-            </div >
+            </div>
         </>
     )
 }

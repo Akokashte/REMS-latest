@@ -2,7 +2,7 @@ import '../styles/home.css'
 import Counter from '../components/Counter';
 import ExamPrepCarausel from '../components/ExamPrepCarausel';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { links_data } from '../components/links_data';
+import { links_data } from '../api/QuickLinksData.api';
 import YtVideo from '../components/YtVideo';
 import { useEffect } from 'react';
 

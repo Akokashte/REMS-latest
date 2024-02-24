@@ -1,32 +1,9 @@
 import React, { useState } from "react";
 import "../styles/gallerycategory.css";
+import {Gallerycat} from "../api/GalleryCat.api";
 
 const GalleryCategory = () => {
     const [activeCatCount, setActiveCatCount] = useState(0);
-    
-    const Gallerycat = [
-        {
-            text: "all",
-            id: 0
-        },
-        {
-            text: "sports",
-            id: 1
-        },
-        {
-            text: "dancing",
-            id: 2
-        },
-        {
-            text: "singing",
-            id: 3
-        },
-
-        {
-            text: "sketting",
-            id: 4
-        },
-    ]
 
     const activeCategory = (id) => {
         setActiveCatCount(id)
