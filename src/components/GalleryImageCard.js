@@ -7,9 +7,12 @@ const GalleryImageCard = (props) => {
 
     return (
         <>
-            <div className="image_card_container">
+            <div className="gallery_image_card_container">
                 <div className="gallery_image_container">
                     <img src={image} alt="gallery photo here" />
+                </div>
+                <div className="gallery_icon_btn">
+                    <div className="download_btn"><HiOutlineDownload />Download</div>
                 </div>
             </div>
         </>

@@ -12,15 +12,16 @@
     gap: 1.2rem;
     background-image: var(--bg_light);
 }
+
 .gallery_head{
     font-size: var(--extra_large);
     color: transparent;
     background:var(--head_gardient_color);
     -webkit-background-clip: text;
     line-height: 2;
-    line-height: 2;
     text-align: center;
 }
+
 .gallery_inner_wrapper {
     height: auto;
     width: 100%;
@@ -47,4 +48,23 @@
     flex-direction: column;
     gap: 1.2rem;
     margin-right: 1.2rem;
+}
+
+.load_more_btn_container{
+    width: 100%;
+    display: flex;
+    font-size: var(--small);
+    flex-direction: column;
+    align-items: center;
+    cursor:pointer;
+}
+
+.load_more_icon{
+    font-size: var(--large);
+}
+
+.load_more_btn{
+    text-transform: capitalize;
+    padding: 1.2rem 0.8rem;
+    border-radius: 1.2rem;
 }
