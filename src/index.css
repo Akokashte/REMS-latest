@@ -1,24 +1,97 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+  font-weight: "<weight>";
+  font-style: "normal";
+  font-variation-settings: "" slnt" 0";
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-:root{
-  --bg_nav_main:#bd8ec2;
-  --bg_navlink:#a271a2;
-  --bg_text:#832996;
-  --brochure_color:rgb(255, 255, 255);
-  --bg_light:#fff;
-  --txt_orange:#dc7603;
-  --bg_hover_orange:#fce6cdd7;
-  --navbar_textcolor:#fff;
-  --para_text_color:#474a4d;
+} */
+
+:root {
+  /* navbar bg and text color variables */
+  --bg_nav_main: #bd8ec2;
+  --bg_navlink: #a271a2;
+  --brochure_color: rgb(255, 255, 255);
+  --navbar_textcolor: #fff;
+  --link_text_color: gray;
+
+  /* hero section boy and girl background color*/
+  --hero_section_gradient: linear-gradient(rgb(181, 137, 181), rgb(207, 151, 117));
+
+  /* admission btn */
+  --admission_btn_text_size: 1.8rem;
+  --admission_btn_text_weight: 700;
+
+  /* background variables */
+  --bg_text: #832996;
+  --bg_light: #fff;
+  --bg_gray: rgb(208, 208, 209);
+  --bg_dark: black;
+  --bg_hover_orange: #fce6cdd7;
+  --bg_hover_admission_btn: #fffbc5;
+  --counter_bg_color: rgb(255, 251, 244);
+  --age_norms_bg_color: #fdfbf7;
+  --footer_bg:rgb(237, 237, 237);
+
+  /* gradient bgcolor and text color */
+  --video_text_gradientbg: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(245, 237, 220, 1) 0%, rgba(250, 233, 251, 1) 100%);
+  --primary_bg_gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+  --chairman_bg_gradient: linear-gradient(274deg, rgba(131, 41, 150, 0.11) 0%, rgba(220, 118, 3, 0.13) 100%);
+  --head_gardient_color: linear-gradient(180deg, #b46f9d 0%, #b46f9d 55%, rgba(220, 118, 3, 0.39) 100%) no-repeat;
+  --timeline_circles_gradient_color:linear-gradient(180deg, rgba(220, 118, 3, 0.3215686275) 0%, rgba(131, 41, 150, 0.4862745098) 100%) 0% 0% no-repeat padding-box;
+  /* enquiry form btn gradient bg */
+  --btn_gradient_background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #d3bf98 0%, rgb(218, 143, 222) 100%);
+  --vision_mission_gradient_bgcolor:transparent linear-gradient( 129deg, rgba(220, 118, 3, 0.0705882353) 0%, rgba(131, 41, 150, 0.1215686275) 100% ) 0% 0% no-repeat padding-box;
+  
+  /*primary text colors */
+  --text_orange: #dc7603;
+  --text_light: white;
+  --text_pink: #909;
+  --text_dark_pink: #832996;
+  --text_dark: black;
+  --para_text_color: #474a4d;
+  --para_dark_color: black;
+
+  /* fonts weight here */
+  --thin: 300;
+  --regular: 400;
+  --mid: 500;
+  --bold: 600;
+  --extra_bold: 800;
+
+  /* fontsize here */
+  --extra_small: 1rem;
+  --small: 1.2rem;
+  --below_medium: 1.5rem;
+  --medium: 2rem;
+  --large: 2.3rem;
+  --extra_large: 3.5rem;
+  --max_large: 4.5rem;
+
+  /* variables for icons in curriculum cards */
+  --curriculum_icon: rgb(230, 230, 58);
+  --curriculum_icon_bg: #4a4948;
+
+  /* curriculam card bg */
+  --curriculum_card_gradient_bg: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(245, 237, 220, 1) 0%, rgba(250, 233, 251, 1) 100%);
+
+  /* variables for icons in faculty card*/
+  --card_icon_size: 7rem;
+  --icon_size: 10rem;
+  --icon_color_primary: #0d6efd;
+
+  /* facultyCard border_color */
+  --faculty_card_border_color: rgba(151, 80, 166, 0.4039215686);
+
+  /* vertical line color */
+  --line_color: linear-gradient(0deg, rgba(219, 202, 154, 1) 0%, rgba(187, 130, 191, 1) 100%);
+
 }

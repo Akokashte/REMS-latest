@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeadImageLine from '../components/HeadImageLine'
 import Collapsible from 'react-collapsible'
 import '../styles/admissionpolicy.css'
 
 const Admissionpolicy = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0 })
+    }, [])
+
     return (
         <>
             <div id='main-outer'>
@@ -65,7 +69,7 @@ const Admissionpolicy = () => {
                 <div className='outer-FAQ'>
 
                     <div className='FAQ'>
-                        <h1>FAQs</h1>
+                        <h1>Frequently Asked Questions</h1>
                         <div className='acc'>
                             <Collapsible trigger="1. How is ROTARY ENGLISH MEDIUM SCHOOL different from other international schools around?" transitionTime={75} >
                                 <h3>Ans- Over the Past 12 years ROTARY ENGLISH MEDIUM SCHOOL has been known for its "Excellence in Education." Our focus is on delivering a high-quality teaching and learning, designing a broad and rich curriculum including diverse co- curricular opportunities and providing a supportive guidance programme.</h3>

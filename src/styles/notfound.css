@@ -1,9 +1,10 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.error-container{
+
+.error-container {
     /* background-color: #5c9ceb; */
     width: 100%;
     height: 84vh;
@@ -15,7 +16,7 @@ box-sizing: border-box;
     justify-content: center;
 }
 
-.error-container .section-error-image{
+.error-container .section-error-image {
     /* background-color: #5c9ceb; */
     position: relative;
     width: 95%;
@@ -25,7 +26,7 @@ box-sizing: border-box;
     justify-content: center;
 }
 
-.error-container .section-error-image .error-image{
+.error-container .section-error-image .error-image {
     /* background-color: rebeccapurple; */
     position: relative;
     width: 600px;
@@ -33,22 +34,21 @@ box-sizing: border-box;
     flex-shrink: 0;
 }
 
-.error-container .error-h1{
+.error-container .error-h1 {
     color: var(--main-color);
-    font-weight: bold;
+    font-weight: var(--bold);
     font-size: 3rem;
-    font-family: Poppins;
 }
 
-.error-container .error-p{
+.error-container .error-p {
     color: var(--paragraph-color);
     /* font-weight: bold; */
     font-size: 1.4rem;
     font-family: Poppins Medium;
 }
 
-.error-container .go-back-btn{
-    color: white;
+.error-container .go-back-btn {
+    color: var(text_light);
     background-color: var(--primary-button-background);
     width: 105px;
     height: 26px;
@@ -58,6 +58,6 @@ box-sizing: border-box;
     cursor: pointer;
 }
 
-.error-container .go-back-btn:hover{
+.error-container .go-back-btn:hover {
     background-color: #ff5100;
 }

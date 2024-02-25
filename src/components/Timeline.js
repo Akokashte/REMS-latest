@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/timeline.css";
 import TimelineCard from "./TimelineCard";
 import { IoCloseCircleOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const Timeline = () => {
 
@@ -55,7 +56,9 @@ const Timeline = () => {
     ]
     return (
         <>
-            <section className="timeline_wrapper">
+            <motion.section className="timeline_wrapper" initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}>
                 <div className="timeline_inner_wrapper">
                     <div className="head_wrapper">
                         <h1>Timeline of rotary english medium school, Khed</h1>
@@ -79,7 +82,7 @@ const Timeline = () => {
                         </div>
                     }
                 </div>
-            </section>
+            </motion.section>
         </>
     )
 }

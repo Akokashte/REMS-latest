@@ -13,7 +13,6 @@ header {
     z-index: 1000000;
 }
 
-
 .head1 {
     width: 100%;
     height: 5rem;
@@ -28,7 +27,6 @@ header {
     height: 5rem;
     display: flex;
     justify-content: space-between;
-    /* background-color: gray; */
 }
 
 .download_section {
@@ -44,12 +42,12 @@ header {
 }
 
 .download_section .download_icon {
-    font-size: 1.4rem;
+    font-size: var(--below_medium);
     color: var(--brochure_color)
 }
 
 .download_section .brochure {
-    font-size: 1.3rem;
+    font-size: var(--small);
     color: var(--brochure_color)
 }
 
@@ -70,32 +68,31 @@ header {
 
 .searchgroup .search {
     width: 30rem;
-    font-size: 1.3rem;
+    font-size: var(--small);
     padding: 0.3rem 0;
     font-weight: 100;
     border: none;
     outline: none;
     caret-color: var(--navbar_textcolor);
-    color: white;
+    color: var(--text_light);
     background: transparent;
 }
 
 .searchgroup .search_icon {
-    font-size: 1.5rem;
+    font-size: var(--below_medium);
     cursor: pointer;
     color: var(--navbar_textcolor);
     transition: transform 0.3s ease;
 }
 
 .searchgroup .search_icon:hover {
-    color: rgb(115, 231, 249);
     transform: scale(1.5, 1.5);
 }
 
 .searchgroup .enquire_btn {
     background-color: var(--bg_light);
-    font-size: 1.2rem;
-    color: var(--txt_orange);
+    font-size: var(--small);
+    color: var(--text_orange);
     padding: 1rem 3rem;
     border-radius: 0.4rem;
     cursor: pointer;
@@ -114,7 +111,7 @@ header {
 
 .change::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: #909;
+    color: var(--text_pink)
 }
 
 .head2 {
@@ -155,20 +152,18 @@ header {
 
 .head2_inner_container .logo_container .logo_title h1 {
     font-weight: 400;
-    font-family: 'Young Serif', serif;
     text-align: center;
-    color: #909;
+    color: var(--text_pink);
 }
 
 .head2_inner_container .logo_container .logo_title span {
-    font-family: 'Teko', sans-serif;
-    font-size: 1.2rem;
+    font-size: var(--small);
     font-weight: 400;
 }
 
 .head2 .navbar ul {
     display: flex;
-    font-size: 1.1rem;
+    font-size: var(--small);
     list-style: none;
     gap: 1.3rem;
 }
@@ -213,11 +208,11 @@ header {
 
 .head2 .navbar .dropdown li {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: var(--small);
     font-weight: 400;
     height: 3.5rem;
     line-height: 3.5rem;
-    color: gray;
+    color: var(--link_text_color);
     padding: 0 0;
     border-radius: 0 0 0.3rem 0.3rem;
     cursor: pointer;
@@ -231,7 +226,7 @@ header {
     border-radius: 0 0 0.3rem 0.3rem;
     text-decoration: none;
     transition: all 0.025s ease-in;
-    color: gray;
+    color: var(--link_text_color);
 }
 
 .head2 .navbar ul li:hover>.dropdown {
@@ -246,13 +241,13 @@ header {
 
 .head2 .navbar li:hover {
     background-color: var(--bg_light);
-    color: black;
+    color: var(--text_dark);
 }
 
 .head2 .dropdown li:hover,
 .head2 .dropdown li a:hover {
-    color: black;
-    background-color: rgb(208, 208, 209);
+    color: var(--text_dark);
+    background-color: var(--bg_gray);
 }
 
 /* for removing cross symbol of search bar */

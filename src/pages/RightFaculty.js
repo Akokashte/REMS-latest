@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FacultyCategoryCard from "../components/FacultyCategoryCard";
 import "../styles/right_faculty.css";
 import HeadImageLine from "../components/HeadImageLine";
 
 const RightFaculty = () => {
+    useEffect(()=>{
+        window.scrollTo({ top: 0})
+    },[])
+
     return (
         <>
             <HeadImageLine headLine={"The Right Faculty"} featuredImage={'admifinal.png'} />

@@ -26,14 +26,14 @@
 }
 
 .head_wrapper {
-    font-size: 1.2rem;
+    font-size: var(--small);
     text-align: center;
     text-transform: capitalize;
 }
 
 .head_wrapper h1 {
-    font-weight: 500;
-    color: #dc7603;
+    font-weight: var(--mid);
+    color: var(--txt_orange);
 }
 
 .timeline_cards_collection {
@@ -72,7 +72,7 @@
     position: absolute;
     top: -.8rem;
     border-radius: 50%;
-    background: linear-gradient(180deg, rgba(220, 118, 3, 0.3215686275) 0%, rgba(131, 41, 150, 0.4862745098) 100%) 0% 0% no-repeat padding-box;
+    background: var(--timeline_circles_gradient_color);
 }
 
 .year_desc_of_timeline {
@@ -110,8 +110,8 @@
 }
 
 .close_option {
-    font-size: 1.8rem;
-    color: white;
+    font-size: var(--medium);
+    color: var(--text_light);
     cursor: pointer;
     z-index: 400;
 }

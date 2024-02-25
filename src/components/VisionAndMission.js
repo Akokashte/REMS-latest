@@ -1,10 +1,13 @@
 import React from "react";
 import "../styles/visionmission.css";
+import { motion } from "framer-motion";
 
 const VisionAndMission = () => {
     return (
         <>
-            <div className="vision_mission_container">
+            <motion.div className="vision_mission_container" initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}>
                 <div className="vision_mission_inner_container">
                     <div className="head_paragraph">
                         <div className="center_box">
@@ -23,7 +26,7 @@ const VisionAndMission = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

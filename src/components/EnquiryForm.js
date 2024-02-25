@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/enquiryform.css'
+
 const EnquiryForm = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   return (
     <>
       <div id='enquiry-form'>
@@ -21,19 +27,19 @@ const EnquiryForm = () => {
               <h2>Standard</h2>
               <select name="Standard" className='form-content' >
                 <option value="nursery">Nursury</option>
-                <option value="nursery">Jr. Kg.</option>
-                <option value="nursery">Sr. Kg.</option>
-                <option value="nursery">First</option>
-                <option value="nursery">Second</option>
-                <option value="nursery">Third</option>
-                <option value="nursery">Forth</option>
-                <option value="nursery">Fifth</option>
-                <option value="nursery">Sixth</option>
-                <option value="nursery">Seventh</option>
-                <option value="nursery">Eighth</option>
-                <option value="nursery">Nineth</option>
-                <option value="nursery">tenth</option>
-                <option value="nursery">Eleventh</option>
+                <option value="juniorkg">Jr. Kg.</option>
+                <option value="seniorkg">Sr. Kg.</option>
+                <option value="1">First</option>
+                <option value="2">Second</option>
+                <option value="3">Third</option>
+                <option value="4">Forth</option>
+                <option value="5">Fifth</option>
+                <option value="6">Sixth</option>
+                <option value="7">Seventh</option>
+                <option value="8">Eighth</option>
+                <option value="9">Nineth</option>
+                <option value="10">tenth</option>
+                <option value="11">Eleventh</option>
               </select>
             </div>
           </div>
@@ -45,6 +51,11 @@ const EnquiryForm = () => {
             <div id='down-right'>
               <h2>Email Address</h2>
               <input type="email" name="Email Address" className='form-content' />
+            </div>
+          </div>
+          <div className='main-form-extlower'>
+            <div className='enquire-dscptn'>
+              <input type="text" />
             </div>
           </div>
           <div className='main-form-button'>

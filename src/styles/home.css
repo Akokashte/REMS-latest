@@ -6,15 +6,15 @@
 
 .home1 {
   width: 100%;
-  min-height: 100vh;
-  max-height: auto;
+  min-height: 81vh;
+  /* max-height: auto; */
 }
 
 .welcomepage {
   width: 100%;
   height: 81.5vh;
   max-height: auto;
-  background: linear-gradient(rgb(181, 137, 181), rgb(207, 151, 117));
+  background: var(--hero_section_gradient);
   display: flex;
   justify-content: space-between;
 }
@@ -24,7 +24,6 @@
   width: 50%;
   display: flex;
   justify-content: right;
-  /* background-color: aqua; */
 }
 
 .left_inner_section {
@@ -44,12 +43,12 @@
 
 .admission_btn p {
   width: fit-content;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: var(--admission_btn_text_size);
+  font-weight: var(--admission_btn_text_weight);
   text-transform: capitalize;
   line-height: 4rem;
-  background-color: white;
-  color: var(--txt_orange);
+  background-color: var(--bg_light);
+  color: var(--text_orange);
   padding: 0 2rem;
   border-radius: 1rem;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
@@ -58,14 +57,14 @@
 }
 
 .admission_btn p:hover {
-  background-color: #fffbc5;
+  background-color: var(--bg_hover_admission_btn);
 }
 
 .left_inner_section h1 {
   width: 35rem;
-  font-size: 70px;
+  font-size: var(--max_large);
   word-wrap: break-word;
-  color: white;
+  color: var(--text_light);
 }
 
 .right_section {
@@ -95,6 +94,7 @@
 
 .home2 {
   width: 100%;
+  /* background-color: aqua; */
   min-height: 120vh;
 }
 
@@ -104,14 +104,13 @@
   max-height: auto;
   display: flex;
   justify-content: center;
-  /* background-color: red; */
   gap: 30rem;
 }
 
 .home2 .vertical .line {
   width: 3.2px;
   height: 20vh;
-  background: linear-gradient(0deg, rgba(219, 202, 154, 1) 0%, rgba(187, 130, 191, 1) 100%);
+  background: var(--line_color);
 }
 
 .vertical img {
@@ -144,7 +143,7 @@
 
 .home2 .heading2 h1 {
   padding-top: 25px;
-  font-weight: 400;
+  font-weight: var(--regular);
 }
 
 .home2 .homevideo {
@@ -163,7 +162,7 @@
   border-radius: 2rem;
   display: flex;
   justify-content: center;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(245, 237, 220, 1) 0%, rgba(250, 233, 251, 1) 100%);
+  background: var(--video_text_gradientbg);
 }
 
 .innervideodiv {
@@ -178,18 +177,19 @@
 
 .home2 .homevideo .textvideo .text {
   width: 50%;
+  padding: 2rem 0;
   height: 30rem;
 }
 
 .home2 .homevideo .textvideo .text h2 {
   font-size: 18px;
-  font-weight: 420;
+  font-weight: var(--regular);
 }
 
 .home2 .homevideo .textvideo .text .read_btn {
-  font-size: 25px;
+  font-size: var(--below_medium);
   text-decoration: none;
-  color: rgb(170, 29, 170);
+  color: var(--text_pink);
 }
 
 .home2 .homevideo .textvideo .player-wrapper {
@@ -199,7 +199,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 3rem;
-  background-color: black;
+  background-color: var(--bg_dark);
 }
 
 .player {
@@ -227,7 +227,7 @@
 .home3 .home3info .info {
   width: 100%;
   min-height: 10vh;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+  background: var(--primary_bg_gradient);
   border-radius: 2rem 2rem 0 0;
   display: flex;
   justify-content: center;
@@ -236,7 +236,7 @@
 }
 
 .home3 .home3info .links {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(252, 245, 231) 0%, rgb(254, 241, 255) 100%);
+  background: var(--primary_bg_gradient);
   width: 100%;
   height: 40vh;
   border-bottom-right-radius: 2rem;
@@ -244,11 +244,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 10rem;
 }
 
 .home3 .home3info .basicinfo {
-  background-color: white;
+  background-color: var(--bg_light);
   box-shadow: 1px 1px 5px rgb(220, 220, 220);
   width: 13.5rem;
   height: 10rem;
@@ -281,20 +281,6 @@
 }
 
 .home3 .home3info .basicinfo .basicinfohead h1 {
-  font-size: 21px;
-  font-weight: 400;
-}
-
-.home4 {
-  width: 100%;
-  min-height: 90vh;
-  max-height: auto;
-  background-color: red;
-}
-
-.home5 {
-  width: 100%;
-  min-height: 90vh;
-  max-height: auto;
-  background-color: yellow;
+  font-size: var(--small);
+  font-weight: var(--regular);
 }
