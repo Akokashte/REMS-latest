@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.my_accordian {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 1rem 1.2rem 0 1.2rem;
+    border: 1px solid #9750a6;
+    background-color: var(--bg_light);
+}
+
+.accordian_head {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--small);
+    font-weight: var(--mid);
+}
+
+.accordian_head .accordian_dropdown_icon {
+    font-size: var(--medium);
+    font-weight: var(--regular);
+    color: var(--text_dark_pink);
+}
+
+.accordian_content {
+    display: flex;
+    height: 0;
+    gap: 1.2rem;
+    visibility: hidden;
+    margin-top: 0;
+    padding: 0 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+    opacity: 0;
+    transition: height 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out,opacity 0.3s ease-in-out;
+}
+.accordian_content_click {
+    display: flex;
+    height: auto;
+    gap: 1.2rem;
+    border-top: 1px solid #9750a6;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+    opacity: 1;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.accordian_content_head {
+    text-transform: capitalize;
+    font-size: var(--extra_small);
+    font-weight: var(--mid);
+    width: fit-content;
+    width: 10%;
+}
+
+.accordian_content_description {
+    font-size: var(--extra_small);
+    font-weight: var(--regular); 
+    width: 90%;
+}

@@ -21,6 +21,7 @@ import Teachers from './pages/Teachers';
 import Annualevents from './pages/Annualevents';
 import Gallery from './pages/Gallery'
 import Achievements from './pages/Achievements';
+import MyAccordian from './components/MyAccordian';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
+        <Route path='/accordian' element={<MyAccordian />} />
         <Route path='/sports' element={<Sports />} />
         <Route path='/activity' element={<Activity />} />
         <Route path='/admissionprocess' element={<Admissionprocess />} />
