@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery_image_card_container {
+    width: 30rem;
+    height: auto;
+    position: relative;
+    /* background-color: red; */
+}
+
+.gallery_image_card_container:hover:before {
+    box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    cursor: pointer;
+}
+
+.gallery_image_container {
+    width: 100%;
+}
+
+.gallery_image_container img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    opacity: 1;
+}
+
+.gallery_icon_btn {
+    position: absolute;
+    font-size: var(--small);
+    color: var(--text_light);
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    padding: 1.2rem 1.2rem;
+    display: none;
+    font-weight: var(--mid);
+}
+
+.gallery_icon_btn .download_btn {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.gallery_image_card_container:hover .gallery_icon_btn {
+    display: block;
+}

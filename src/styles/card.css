@@ -1,9 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.my_container{
+
+.carausal_outer {
+    width: 100%;
+    height: 65vh;
+    /* background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(245, 237, 220, 1) 0%, rgba(250, 233, 251, 1) 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_container {
     width: 70%;
     height: 22rem;
     margin: 1rem auto;
@@ -13,7 +23,8 @@
     background-color: var(--bg_light);
     box-shadow: 0px 0px 21px 2px gray;
 }
-.card_wrapper{
+
+.card_wrapper {
     width: 100%;
     height: 80%;
     display: flex;
@@ -21,21 +32,23 @@
     flex-direction: column;
     gap: 1rem;
 }
-.banner_image{
+
+.banner_image {
     position: relative;
     height: 12rem;
     width: 100%;
     cursor: pointer;
 }
-.banner_image figure img{
+
+.banner_image figure img {
     object-fit: contain cover;
     height: 12rem;
     width: 100%;
-    border-radius: 0.8rem 0.8rem 0 0 ;
+    border-radius: 0.8rem 0.8rem 0 0;
 }
 
-#heading{
-    position:absolute;
+#heading {
+    position: absolute;
     width: 100%;
     line-height: 3rem;
     bottom: 0;
@@ -43,33 +56,39 @@
     background-color: rgba(18, 14, 14, 0.701);
     color: var(--text_light);
     opacity: 0;
-    transition: transform 0.1s ease-in,opacity 0.2s ease;
+    transition: transform 0.1s ease-in, opacity 0.2s ease;
     transform: scale(0);
 }
-.banner_image:hover #heading{
+
+.banner_image:hover #heading {
     transform: scale(1);
     opacity: 1;
 }
-.info{
+
+.info {
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
-.info #heading2{
+
+.info #heading2 {
     display: block;
     text-align: center;
     font-weight: var(--mid);
 }
-#description{
+
+#description {
     width: 95%;
     word-wrap: break-word;
     text-align: justify;
 }
-.myslider{
+
+.myslider {
     background-color: var(--bg_light);
 }
-.cardcarousel{
+
+.cardcarousel {
     padding: 2rem 0;
 }

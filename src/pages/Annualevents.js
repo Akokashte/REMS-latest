@@ -19,11 +19,11 @@ const Annualevents = () => {
                     <div className='events-imgs'>
 
                         <div className='events-theatre'>
-                            <h1>Volleyball</h1>
+                            <h1>Cricket</h1>
                             <img src="cricket.jpg" alt="" />
                         </div>
                         <div className='events-theatre'>
-                            <h1>Cricket</h1>
+                            <h1>Volleyball</h1>
                             <img src="football.jpg" alt="" />
                         </div>
                     </div>

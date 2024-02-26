@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
+
 }
 
 .teachers_info_inner_section {
@@ -14,7 +15,7 @@
     align-items: center;
 }
 
-.subject_name{
+.subject_name {
     font-size: 2rem;
     line-height: 8rem;
     text-transform: capitalize;

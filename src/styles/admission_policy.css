@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.admission_policy_container{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.inner_admission_policy_wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.outerfaq{
+    width: 90%;
+    background-image: var(--primary_bg_gradient);
+    padding: 2rem 0;
+    border-radius: 2rem;
+}
+.outerfaq .faq_heading{
+   text-align: center;
+   font-size: var(--large);
+   color: var(--text_dark_pink);
+}
+.outerfaq .faq{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

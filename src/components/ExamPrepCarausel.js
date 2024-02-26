@@ -27,10 +27,10 @@ function ExamPrepCarausel() {
 
   const data = [
     { title: 'HomiBhaba', img: 'homibhabha.jpg', desc: 'Homibhabha couching to give opportunity for students to involve in scientific activities' },
-    { title: 'ATL Lab', img: 'atl.png', desc:'ATL (Atal Tinkering Lab) is a work space where young minds can give shape to their ideas through hands on do-it-yourself mode'},
-    { title: 'JEE', img: 'jee.jpg', desc:"We have best faculty to guide about JEE entrance exam" },
-    { title: 'NATA', img: 'nata.jpg',desc:"We have best faculty and couching material to guide about NATA entrance exam" },
-    { title: 'NEET', img: 'neet.jpeg',desc:"We have best faculty to guide about NEET entrance exam"  }
+    { title: 'ATL Lab', img: 'atl.png', desc: 'ATL (Atal Tinkering Lab) is a work space where young minds can give shape to their ideas through hands on do-it-yourself mode' },
+    { title: 'JEE', img: 'jee.jpg', desc: "We have best faculty to guide about JEE entrance exam" },
+    { title: 'NATA', img: 'nata.jpg', desc: "We have best faculty and couching material to guide about NATA entrance exam" },
+    { title: 'NEET', img: 'neet.jpeg', desc: "We have best faculty to guide about NEET entrance exam" }
   ]
   return (
     <>

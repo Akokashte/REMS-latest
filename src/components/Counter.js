@@ -1,10 +1,15 @@
 import '../styles/counter.css';
 import CountingLogic from './CountingLogic';
+import { motion } from "framer-motion";
 
 const Counter = () => {
     return (
         <>
-            <div className="wrapper">
+            <motion.div className="wrapper"
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >
                 <div className="container">
                     <i className="fas fa-utensils"></i>
                     <span className="num" ><CountingLogic val={30} /></span>
@@ -25,7 +30,7 @@ const Counter = () => {
                     <span className="num" ><CountingLogic val={30000} /></span>
                     <span className="text">Five Stars</span>
                 </div>
-            </div>
+            </motion.div>
 
         </>
     )

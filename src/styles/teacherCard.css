@@ -1,4 +1,4 @@
-.teachers_card{
+.teachers_card {
     width: 30rem;
     min-height: 35rem;
     max-height: auto;
@@ -8,34 +8,39 @@
     padding: 1.2rem 0;
     background-color: var(--bg_light);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    gap: 0.5rem;
 }
 
-.teacher_profile{
+.teacher_profile {
     width: 80%;
     height: auto;
     border-radius: 50%;
+    /* background-color: red; */
+
 }
 
-.teacher_profile img{
+.teacher_profile img {
     object-fit: contain cover;
     height: 100%;
     width: 100%;
     border-radius: 50%;
 }
 
-.teacher_info{
+.teacher_info {
     width: 90%;
     display: flex;
     flex-direction: column;
 }
-.teacher_info .name{
+
+.teacher_info .name {
     width: 100%;
     text-align: center;
     font-size: var(--below_medium);
-   font-weight: var(--mid);
-   line-height: 2.5rem;
+    font-weight: var(--mid);
+    line-height: 2.5rem;
 }
-.teacherexperience{
+
+.teacherexperience {
     display: flex;
     justify-content: center;
     font-size: var(--small);
@@ -43,13 +48,16 @@
     padding-top: 2.5rem;
     line-height: 1.2rem;
 }
-.teach_group{
+
+.teach_group {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-direction: row;
     align-items: center;
     gap: 1.2rem;
 }
-.teacherexperience .headtext{
+
+.teacherexperience .headtext {
     font-size: var(--small);
     font-weight: var(--mid);
 }
