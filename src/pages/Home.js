@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { links_data } from '../api/QuickLinksData.api';
 import YtVideo from '../components/YtVideo';
 import { useEffect } from 'react';
-
+import { motion } from "framer-motion";
 const Home = () => {
   const navigate = useNavigate()
 
@@ -22,20 +22,31 @@ const Home = () => {
     <>
       <div className='home1'>
         <div className='welcomepage'>
-          <div className='left_section'>
+          <motion.div className='left_section'
+          initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+          >
             <div className='left_inner_section'>
               <h1>Nurturing The Uniqueness Of Every Student</h1>
               <div className='admission_btn'><p>admissions open for AY 2023-24</p> </div>
             </div>
-          </div>
-          <div className='right_section'>
+          </motion.div>
+          <motion.div className='right_section'
+          initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+          >
             <div className='inner_section'>
               <img src="herosection.png" alt="" />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className='home2'>
+      <motion.div className='home2'
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}>
         <div className='vertical'>
           <img src="icon-hat-gradient.png" alt="" />
           <div className='line'></div>
@@ -47,7 +58,10 @@ const Home = () => {
         <div className='heading2'>
           <h1>MORE THAN GRADES</h1>
         </div>
-        <div className='homevideo'>
+        <motion.div className='homevideo'
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}>
           <div className='textvideo'>
             <div className='innervideodiv'>
               <YtVideo />
@@ -63,9 +77,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className='home3'>
+        </motion.div>
+      </motion.div>
+      <motion.div className='home3'
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <div className='home3info'>
           <div className='info'>
             <h1>Have a look</h1>
@@ -73,7 +91,7 @@ const Home = () => {
           <div className='links'>
             {
               links_data.map((curElem, index) => (
-                <div className='basicinfo' key={index} onClick={()=>redirectTo(curElem.link)}>
+                <div className='basicinfo' key={index} onClick={() => redirectTo(curElem.link)}>
                   <div className='basicinfoimg'>
                     {curElem.img}
                   </div>
@@ -85,7 +103,7 @@ const Home = () => {
             }
           </div>
         </div>
-      </div>
+      </motion.div>
       <Counter />
       <ExamPrepCarausel />
     </>

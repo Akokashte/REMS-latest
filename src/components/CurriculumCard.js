@@ -3,6 +3,7 @@ import { FaSchool } from "react-icons/fa";
 import { FaBookReader } from "react-icons/fa";
 import { FaBookOpen } from "react-icons/fa6";
 import { IoIosSchool } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const CurriculumCard = () => {
     const AllCurriculum = [
@@ -45,7 +46,11 @@ const CurriculumCard = () => {
             {
                 AllCurriculum.map((curElem, index) => {
                     const { headText, subHeadText, icon, para1, para2 } = curElem;
-                    return <div key={index} className="students_standards_container">
+                    return <motion.div key={index} className="students_standards_container"
+                        initial={{ opacity: 0.5, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                    >
                         <div className="head_div">
                             <h1>{headText}</h1>
                             <h3>{subHeadText}</h3>
@@ -59,7 +64,7 @@ const CurriculumCard = () => {
                                 <p>{para2}</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 })
             }
         </>

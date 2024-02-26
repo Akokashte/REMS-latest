@@ -6,8 +6,8 @@
 
 .home1 {
   width: 100%;
-  min-height: 100vh;
-  max-height: auto;
+  min-height: 81vh;
+  /* max-height: auto; */
 }
 
 .welcomepage {
@@ -94,6 +94,7 @@
 
 .home2 {
   width: 100%;
+  /* background-color: aqua; */
   min-height: 120vh;
 }
 
@@ -243,7 +244,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 10rem;
 }
 
 .home3 .home3info .basicinfo {

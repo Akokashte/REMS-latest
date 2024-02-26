@@ -23,13 +23,13 @@
     background-color: var(--bg_light);
     cursor: pointer;
     border: 1px solid var(--faculty_card_border_color);
-    transition: transform 0.3s ease-in-out,box-shadow 0.1s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
 }
 
 .faculty_category_card:hover {
-   transform: translate3d(0,0,2rem);
-   transform: scale(1.1);
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translate3d(0, 0, 2rem);
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .category_icon_text {
