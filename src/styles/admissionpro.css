@@ -43,6 +43,7 @@
 }
 
 .accordion .accordion-inner {
+    width: 100%;
     display: flex;
     gap: 4rem;
     flex-direction: column;
@@ -66,8 +67,7 @@
 
 .adpro3 {
     width: 100%;
-    min-height: 80vh;
-    max-height: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,8 +78,7 @@
 
 .adpro3 #things-to-remember {
     width: 70%;
-    height: 45vh;
-    max-height: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

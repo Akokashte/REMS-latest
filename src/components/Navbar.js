@@ -30,13 +30,7 @@ const Navbar = () => {
                 {/* second head part */}
                 <div className="head2">
                     <div className="head2_inner_container">
-                        <div className="logo_container">
-                            <img src="mainlogo.jpg" alt="logo here" />
-                            <div className="logo_title">
-                                <h1>Rotary</h1>
-                                <span>English Medium School</span>
-                            </div>
-                        </div>
+                               <img src="remslogo.png" className="logo_container" />
                         <nav className="navbar">
                             <ul>
                                 <li><NavLink to="/">Home</NavLink></li>

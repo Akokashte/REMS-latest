@@ -10,10 +10,11 @@
     border-radius: 1.2rem;
     line-height: 2rem;
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 0.5rem;
     cursor: pointer;
-    padding: 1rem 1.2rem 0 1.2rem;
+    padding: 1.2rem 1.2rem;
     border: 1px solid #9750a6;
     background-color: var(--bg_light);
 }
@@ -34,26 +35,30 @@
 
 .accordian_content {
     display: flex;
-    height: 0;
     gap: 1.2rem;
     visibility: hidden;
+    position: absolute;
+    transform: scale(0);
+    max-height: 0;
+    top: 0;
     margin-top: 0;
     padding: 0 0;
     border-radius: 0 0 1.2rem 1.2rem;
     opacity: 0;
-    transition: height 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out,opacity 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out,top 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out,opacity 0.3s ease-in-out;
 }
 .accordian_content_click {
     display: flex;
     height: auto;
     gap: 1.2rem;
+    position: relative;
     border-top: 1px solid #9750a6;
     margin-top: 1rem;
     padding: 1rem 0;
     border-radius: 0 0 1.2rem 1.2rem;
     opacity: 1;
     overflow: hidden;
-    transition: height 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out,top 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .accordian_content_head {
