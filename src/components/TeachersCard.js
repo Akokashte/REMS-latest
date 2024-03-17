@@ -13,8 +13,8 @@ const TeachersCard = ({ name, image, experience, qualification }) => {
                         Mr. {name}
                     </div>
                     <div className="teacherexperience">
-                        <div className="teach_group"> <span className="headtext">Experience</span><span>{experience}</span></div>
-                        <div className="teach_group"><span className="headtext">Qualification</span><span>{qualification.slice(0, 20)}{qualification.length > 20 ? "..." : ""}</span> </div>
+                        <div className="teach_group"> <span className="headtext">Experience</span><span className="qualification_text">{experience}</span></div>
+                        <div className="teach_group"><span className="headtext">Qualification</span><span className="qualification_text">{qualification.slice(0, 20)}{qualification.length > 20 ? "..." : ""}</span> </div>
                     </div>
                 </div>
             </div>
