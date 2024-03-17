@@ -10,20 +10,16 @@ const Card = ({ head }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
+              <div className='card_outer'>
                 <div className='my_container'>
-                    <div className='card_wrapper'>
-                        <div className='banner_image'>
-                            <figure>
-                                <img src={head.img} alt='img here' ></img>
-                            </figure>
-                            <h2 id='heading' >{head.title}</h2>
-                        </div>
-                        <div className='info'>
-                            <h2 id='heading2' >{head.title}</h2>
-                            <p id='description'>{head.desc}</p>
-                        </div>
+                    <img src={head.img} alt="" />
+                    <div className='card_info'>
+                        <h1 className='title'>{head.title}</h1>
+                        <h2 className='sub_title'>{head.subtitle}</h2>
+                        <p className='c_info'>{head.desc}</p>
                     </div>
                 </div>
+            </div>
             </motion.div>
         </>
     )

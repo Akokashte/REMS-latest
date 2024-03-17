@@ -13,82 +13,77 @@
     align-items: center;
 }
 
+.my_card_outer {
+    width: 75%;
+    height: 50vh;
+    /* background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(245, 237, 220, 1) 0%, rgba(250, 233, 251, 1) 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .my_container {
-    width: 70%;
+    width: 75%;
     height: 22rem;
     margin: 1rem auto;
     display: flex;
     justify-content: center;
     border-radius: 0.8rem;
     background-color: var(--bg_light);
-    box-shadow: 0px 0px 21px 2px gray;
-}
-
-.card_wrapper {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.banner_image {
+    box-shadow: 0px 0px 21px 2px rgb(203, 204, 208);
+    /* background-color: aqua; */
+    overflow: hidden;
+    border: 8px solid white;
     position: relative;
-    height: 12rem;
-    width: 100%;
-    cursor: pointer;
 }
 
-.banner_image figure img {
-    object-fit: contain cover;
-    height: 12rem;
+.my_container img {
     width: 100%;
-    border-radius: 0.8rem 0.8rem 0 0;
+    height: 100%;
+    object-fit: cover;
 }
 
-#heading {
+.card_info {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
     position: absolute;
-    width: 100%;
-    line-height: 3rem;
-    bottom: 0;
-    text-align: center;
-    background-color: rgba(18, 14, 14, 0.701);
-    color: var(--text_light);
-    opacity: 0;
-    transition: transform 0.1s ease-in, opacity 0.2s ease;
-    transform: scale(0);
-}
-
-.banner_image:hover #heading {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.info {
-    width: 95%;
+    background-color: #1f3d4738;
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 20px;
+    transition: 1.5s;
     display: flex;
+    justify-content: left;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 0.6rem;
 }
 
-.info #heading2 {
-    display: block;
-    text-align: center;
+.my_container:hover .card_info {
+    right: 0;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: var(--below_medium);
     font-weight: var(--mid);
 }
 
-#description {
-    width: 95%;
-    word-wrap: break-word;
-    text-align: justify;
+.sub_title {
+    font-size: var(--extra_small);
+    font-weight: var(--regular);
 }
 
-.myslider {
-    background-color: var(--bg_light);
-}
-
-.cardcarousel {
-    padding: 2rem 0;
+.c_info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
 }
