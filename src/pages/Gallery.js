@@ -3,7 +3,6 @@ import GalleryImageCard from '../components/GalleryImageCard'
 import "../styles/gallery.css";
 import GalleryCategory from '../components/GalleryCategory';
 import { HiOutlineDownload } from 'react-icons/hi';
-// import { GalleryImages } from '../api/GalleryImages.api';
 import axios from 'axios'
 
 const Gallery = () => {
@@ -36,43 +35,44 @@ const Gallery = () => {
     const thirdPart = tempGalleryImages.slice(arrayThreeParts + newDivision,)
 
     return (
-            <section className='gallery_outer_container'>
-                <h2 className='gallery_head'>Gallery</h2>
-                <GalleryCategory galleryImages={galleryImages} setGalleryImages={setGalleryImages} setTempGalleryImages={setTempGalleryImages} />
-                <div className='gallery_inner_wrapper'>
-                    <div className='first_gallery_inner_container'>
-                        {
-                            thirdPart.map((curElem, index) => {
-                                return (
-                                    <GalleryImageCard key={index} image={curElem.image_url} />
-                                )
-                            })
-                        }
-                    </div>
-                    <div className='second_gallery_inner_container'>
-                        {
-                            secondPart.map((curElem, index) => {
-                                return (
-                                    <GalleryImageCard key={index} image={curElem.image_url} />
-                                )
-                            })
-                        }
-                    </div>
-                    <div className='third_gallery_inner_container'>
-                        {
-                            firstPart.map((curElem, index) => {
-                                return (
-                                    <GalleryImageCard key={index} image={curElem.image_url} />
-                                )
-                            })
-                        }
-                    </div>
+
+        <section className='gallery_outer_container'>
+            <h2 className='gallery_head'>Gallery</h2>
+            <GalleryCategory galleryImages={galleryImages} setGalleryImages={setGalleryImages} setTempGalleryImages={setTempGalleryImages} />
+            <div className='gallery_inner_wrapper'>
+                <div className='first_gallery_inner_container'>
+                    {
+                        thirdPart.map((curElem, index) => {
+                            return (
+                                <GalleryImageCard key={index} image={curElem.image_url} />
+                            )
+                        })
+                    }
                 </div>
-                <div className='load_more_btn_container'>
-                    <div className='load_more_btn'>load more</div>
-                    <HiOutlineDownload className='load_more_icon' />
+                <div className='second_gallery_inner_container'>
+                    {
+                        secondPart.map((curElem, index) => {
+                            return (
+                                <GalleryImageCard key={index} image={curElem.image_url} />
+                            )
+                        })
+                    }
                 </div>
-            </section>
+                <div className='third_gallery_inner_container'>
+                    {
+                        firstPart.map((curElem, index) => {
+                            return (
+                                <GalleryImageCard key={index} image={curElem.image_url} />
+                            )
+                        })
+                    }
+                </div>
+            </div>
+            <div className='load_more_btn_container'>
+                <div className='load_more_btn'>load more</div>
+                <HiOutlineDownload className='load_more_icon' />
+            </div>
+        </section>
     )
 }
 
