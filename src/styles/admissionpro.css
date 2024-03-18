@@ -36,7 +36,7 @@
     height: fit-content;
     padding: 2rem 0;
     max-height: auto;
-    background:var(--primary_bg_gradient);
+    background: var(--primary_bg_gradient);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@
     text-align: center;
 }
 
-.adpro3 #things-to-remember #ttr-body h2{
+.adpro3 #things-to-remember #ttr-body h2 {
     font-size: var(--below_medium);
 }
 
