@@ -1,0 +1,32 @@
+.examprep_outer {
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+
+.carousal_heading {
+    width: 100%;
+    height: 10vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    color: var(--text_dark_pink);
+    font-size: var(--below_medium);
+
+}
+
+
+.my_actual_cards {
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* background-color: rgb(216, 215, 215); */
+    /* gap: 3rem; */
+    padding: 2.5rem 0;
+}

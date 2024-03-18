@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import "../styles/gallerycategory.css";
-import {Gallerycat} from "../api/GalleryCat.api";
+import { Gallerycat } from "../api/GalleryCat.api";
 
-const GalleryCategory = () => {
+const GalleryCategory = ({ galleryImages, setTempGalleryImages }) => {
     const [activeCatCount, setActiveCatCount] = useState(0);
-
-    const activeCategory = (id) => {
+    const activeCategory = (id, text) => {
         setActiveCatCount(id)
+        if (text === 'all') {
+            setTempGalleryImages(galleryImages)
+        }
+        else {
+            const categorywisefilterImage = galleryImages.filter((curElem) => {
+                return curElem.category === text
+            })
+            setTempGalleryImages(categorywisefilterImage)
+        }
     }
     return (
         <>
@@ -15,7 +23,7 @@ const GalleryCategory = () => {
                     {
                         Gallerycat.map((curElem, index) => {
                             return (
-                                <div className="icon_text" key={curElem.id} style={{ backgroundColor: curElem.id === activeCatCount ? "black" : "white", color: curElem.id === activeCatCount ? "white" : "black" }} onClick={() => activeCategory(curElem.id)}>
+                                <div className="icon_text" key={curElem.id} style={{ backgroundColor: curElem.id === activeCatCount ? "black" : "white", color: curElem.id === activeCatCount ? "white" : "black" }} onClick={() => activeCategory(curElem.id, curElem.text)}>
                                     <span className="category_title">{curElem.text}</span>
                                 </div>
                             )

@@ -1,11 +1,13 @@
 import '../styles/home.css'
 import Counter from '../components/Counter';
-import ExamPrepCarausel from '../components/ExamPrepCarausel';
+import ExamPrepCard from '../components/ExamPrepCard';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { links_data } from '../api/QuickLinksData.api';
 import YtVideo from '../components/YtVideo';
 import { useEffect } from 'react';
 import { motion } from "framer-motion";
+import Faq from '../components/Faq';
+
 const Home = () => {
   const navigate = useNavigate()
 
@@ -23,9 +25,9 @@ const Home = () => {
       <div className='home1'>
         <div className='welcomepage'>
           <motion.div className='left_section'
-          initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
           >
             <div className='left_inner_section'>
               <h1>Nurturing The Uniqueness Of Every Student</h1>
@@ -33,9 +35,9 @@ const Home = () => {
             </div>
           </motion.div>
           <motion.div className='right_section'
-          initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
           >
             <div className='inner_section'>
               <img src="herosection.png" alt="" />
@@ -105,7 +107,8 @@ const Home = () => {
         </div>
       </motion.div>
       <Counter />
-      <ExamPrepCarausel />
+      <ExamPrepCard />
+      <Faq />
     </>
   )
 }

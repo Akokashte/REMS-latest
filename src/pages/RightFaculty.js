@@ -4,9 +4,9 @@ import "../styles/right_faculty.css";
 import HeadImageLine from "../components/HeadImageLine";
 
 const RightFaculty = () => {
-    useEffect(()=>{
-        window.scrollTo({ top: 0})
-    },[])
+    useEffect(() => {
+        window.scrollTo({ top: 0 })
+    }, [])
 
     return (
         <>
