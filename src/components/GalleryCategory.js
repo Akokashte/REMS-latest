@@ -34,5 +34,4 @@ const GalleryCategory = ({ galleryImages, setTempGalleryImages }) => {
         </>
     )
 }
-
 export default GalleryCategory;

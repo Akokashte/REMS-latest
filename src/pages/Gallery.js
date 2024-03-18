@@ -12,7 +12,6 @@ const Gallery = () => {
     const fetchAllImages = async () => {
         try {
             const images = await axios.get("http://localhost:5000/api/v1/gallery/fetch/all/images")
-            // console.log(images.data.data)
             setGalleryImages(images.data.data)
             setTempGalleryImages(images.data.data)
         }
@@ -34,8 +33,9 @@ const Gallery = () => {
     const secondPart = tempGalleryImages.slice(arrayThreeParts, arrayThreeParts + newDivision)
     const thirdPart = tempGalleryImages.slice(arrayThreeParts + newDivision,)
 
-    return (
 
+
+    return (
         <section className='gallery_outer_container'>
             <h2 className='gallery_head'>Gallery</h2>
             <GalleryCategory galleryImages={galleryImages} setGalleryImages={setGalleryImages} setTempGalleryImages={setTempGalleryImages} />
@@ -75,5 +75,4 @@ const Gallery = () => {
         </section>
     )
 }
-
 export default Gallery
