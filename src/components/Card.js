@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/card.css';
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Card = ({ head }) => {
     return (
         <>
-            <motion.div className='carausal_outer'
+            <div className='carausal_outer'
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
@@ -20,7 +20,7 @@ const Card = ({ head }) => {
                         </div>
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </>
     )
 }
