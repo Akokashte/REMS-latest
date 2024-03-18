@@ -5,7 +5,6 @@ import GalleryCategory from '../components/GalleryCategory';
 import { HiOutlineDownload } from 'react-icons/hi';
 // import { GalleryImages } from '../api/GalleryImages.api';
 import axios from 'axios'
-import UserContextProvider from '../Contexts/UserContextProvider';
 
 const Gallery = () => {
     const [galleryImages, setGalleryImages] = useState([])
@@ -36,11 +35,7 @@ const Gallery = () => {
     const secondPart = tempGalleryImages.slice(arrayThreeParts, arrayThreeParts + newDivision)
     const thirdPart = tempGalleryImages.slice(arrayThreeParts + newDivision,)
 
-
-
     return (
-        <UserContextProvider>
-
             <section className='gallery_outer_container'>
                 <h2 className='gallery_head'>Gallery</h2>
                 <GalleryCategory galleryImages={galleryImages} setGalleryImages={setGalleryImages} setTempGalleryImages={setTempGalleryImages} />
@@ -78,7 +73,6 @@ const Gallery = () => {
                     <HiOutlineDownload className='load_more_icon' />
                 </div>
             </section>
-        </UserContextProvider>
     )
 }
 
