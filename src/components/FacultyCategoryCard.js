@@ -1,14 +1,4 @@
 import React from "react";
-import { GiChemicalDrop } from "react-icons/gi";
-import { FaDesktop } from "react-icons/fa6";
-import { FaEarthAmericas } from "react-icons/fa6";
-import { TbMathSymbols } from "react-icons/tb";
-import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
-import { RiEnglishInput } from "react-icons/ri";
-import { CiCalculator1 } from "react-icons/ci";
-import { MdOutlineSportsGymnastics } from "react-icons/md";
-import { MdPsychologyAlt } from "react-icons/md";
-import { GiDna2 } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 
 const FacultyCategoryCard = () => {
@@ -16,70 +6,42 @@ const FacultyCategoryCard = () => {
 
     const Faculty = [
         { 
-            expertise: "physics",
-            categoryIcon: <FaEarthAmericas />,
-            desc:"Welcome to the Physics Faculty, where the fundamental principles of the physical world are explored and understood. Our faculty is dedicated to unraveling the mysteries of the universe, from the tiniest particles to the vastness of space"
+            section: "nursery",
+            sectionImage: "https://media.istockphoto.com/id/1402700264/photo/teacher-with-a-group-of-elementary-students-playing-with-toy-blocks.webp?b=1&s=170667a&w=0&k=20&c=pC8b5jyKPBJoOr0_kjHFMEtKARgjPrF_HUkvpoPF8pw=",
+            desc:"Nursery school teachers play a crucial role in shaping the early learning experiences of young children. With patience and enthusiasm, they create nurturing environments where curiosity is encouraged and imagination flourishes. Through engaging activities and gentle guidance, they foster social, emotional, and cognitive development in their students. These dedicated educators understand the importance of individualized attention, tailoring their teaching approaches to suit each child's unique needs. Ultimately, nursery school teachers lay the foundation for a lifetime of learning and growth."
         },
         {
-            expertise: "chemistry",
-            categoryIcon: <GiChemicalDrop />,
-            desc:"Welcome to the fascinating world of chemistry! Chemistry is the science that explores the composition, structure, properties, and reactions of matter. From the tiniest atoms to complex molecules, chemistry delves into the building blocks of everything around us, from the air we breathe to the food we eat and the materials that make up our world."
+            section: "primary",
+            sectionImage: "https://cdn.create.vista.com/api/media/small/17140195/stock-photo-diligent-pupils",
+            desc:"Hello, young learners! Welcome to our classroom where fun and learning come together. Together, we'll explore exciting new ideas and discover the wonders of the world around us. Let's work hard, ask questions, and always remember: mistakes are just opportunities to learn! With kindness and curiosity, we'll grow into amazing scholars. Get ready for a journey filled with laughter, friendship, and endless possibilities"
         },
         {
-            expertise: "mathematics",
-            categoryIcon: <TbMathSymbols />,
-            desc:"Welcome to the fascinating world of mathematics! In this subject, we explore the language of patterns, shapes, quantities, and structures that underlie the universe. From solving equations to understanding the intricacies of calculus, mathematics provides the tools to analyze, interpret, and solve real-world problems"
+            section: "secondary",
+            sectionImage: "https://images.ctfassets.net/ktcrve6hht2u/6kn9ZnwlPxBCzJoHU3u6Bq/772162c44ae833552000c06530a464a8/39.png?w=1904&h=1428&q=50&fm=png",
+            desc:"As secondary school teachers, we play a vital role in shaping young minds. Our dedication to fostering critical thinking, creativity, and a love for learning is paramount. Through engaging lessons and personalized support, we empower students to reach their full potential. We strive to create inclusive and supportive environments where every student feels valued and respected. Together, let's inspire the next generation to become confident, compassionate, and lifelong learners."
         },
         {
-            expertise: "biology",
-            categoryIcon: <GiDna2 />,
-            desc:"Welcome to the fascinating world of biology! In this subject, we explore the intricate mechanisms of life, from the tiniest single-celled organisms to the complexities of ecosystems. Through the lens of biology, we uncover the marvels of genetics, evolution, ecology, and much more. Join us as we delve into the wonders of the natural world and uncover the secrets of life itself."
+            section: "senior secondary",
+            sectionImage: "https://t4.ftcdn.net/jpg/05/39/10/47/360_F_539104776_BchIZKRhIUXDY0ZaVHxaoIDvRa2eAG3d.jpg",
+            desc:"Senior secondary school teachers play a pivotal role in shaping the academic and personal development of their students. With expertise in their subject matter, they guide learners towards deeper understanding and critical thinking. Their mentorship extends beyond the classroom, fostering a supportive environment for growth and success. Through innovative teaching methods and tailored approaches, they empower students to reach their full potential. Dedicated to excellence, senior secondary school teachers inspire a love for learning that lasts a lifetime."
         },
-        {
-            expertise: "architecture",
-            categoryIcon: <HiOutlineBuildingOffice2 />,
-            desc:"Welcome to the fascinating world of architecture! In this subject, we explore the art and science of designing and constructing buildings and structures that shape the world around us. From ancient marvels to modern skyscrapers, architecture reflects the cultural, social, and technological advancements of civilizations throughout history."
-        },
-        {
-            expertise: "english",
-            categoryIcon: <RiEnglishInput />,
-            desc:"Welcome to the exciting world of English! In this subject, we delve into the beauty and power of language, exploring its intricacies, nuances, and endless possibilities. From classic literature to contemporary communication, from grammar fundamentals to creative expression, English offers a rich tapestry of learning experiences."
-        },
-        {
-            expertise: "commerce",
-            categoryIcon: <CiCalculator1 />,
-            desc:"Welcome to the exciting world of commerce, where business meets opportunity! In this subject, we explore the intricate dynamics of trade, finance, and entrepreneurship. From understanding the fundamentals of economics to delving into the complexities of global markets, commerce opens doors to a multitude of career paths. "
-        },
-        {
-            expertise: "physical education",
-            categoryIcon: <MdOutlineSportsGymnastics />,
-            desc:"Welcome to Physical Education! In this dynamic subject, we explore the vital connection between physical activity, health, and overall well-being. Through a blend of theory and practical application, we delve into various aspects of fitness, sports, and lifestyle choices. Get ready to move, learn, and discover the keys to a healthier, more active lifestyle!"
-        },
-        {
-            expertise: "information technology",
-            categoryIcon: <FaDesktop />,
-            desc:"Welcome to the fascinating world of Information Technology (IT), where innovation meets functionality to shape the digital landscape of our modern world. In this dynamic field, we explore the vast realm of computing technologies, digital systems, and data management solutions that power our interconnected society."
-        },
-        {
-            expertise: "councelling",
-            categoryIcon: <MdPsychologyAlt />,
-            desc:"Welcome to the world of counseling, where understanding meets empathy and guidance merges with support. Counseling is a transformative journey where individuals explore their thoughts, feelings, and experiences in a safe and non-judgmental environment."
-        }
     ]
 
-    const openTeacherInfo=(expertise)=>{
-        navigate("/teachers",{state:expertise})
+    const openTeacherInfo=(section)=>{
+        navigate("/teachers",{state:section})
     }
     return (
         <>
             {
                 Faculty.map((curElem, index) => {
-                    const { expertise, categoryIcon,desc } = curElem;
+                    const { section, sectionImage,desc } = curElem;
                     return (
-                        <div key={index} className="faculty_category_card" onClick={()=>openTeacherInfo(expertise)}>
+                        <div key={index} className="faculty_category_card" onClick={()=>openTeacherInfo(section)}>
                             <div className="category_icon_text">
-                                {categoryIcon}
-                                <h2>{expertise}</h2>
+                                <div className="section_image_wrapper">
+                                <img src={sectionImage} />
+                                </div>
+                                <h2>{section}</h2>
                             </div>
                             <div className="category_description">
                                 <p>
