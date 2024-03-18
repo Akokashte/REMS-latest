@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import '../styles/enquiryform.css'
 
 const EnquiryForm = () => {
-  
+
   useEffect(() => {
     window.scrollTo({ top: 0 })
   }, [])
@@ -51,6 +51,20 @@ const EnquiryForm = () => {
             <div id='down-right'>
               <h2>Email Address</h2>
               <input type="email" name="Email Address" className='form-content' />
+            </div>
+          </div>
+          <div className='main-form-xtrem'>
+
+            <div id='xtrem-down-left'>
+              <h2>Any Questions?</h2>
+              <input type="text" name="Description" className='desptn-content' />
+            </div>
+            <div id='xtrem-down-right'>
+              <div id='otp-btns'>
+                <input type="button" value="Get OTP" id='otp' />
+                <input type="button" value="Verify OTP" id='otp' placeholder='sujeet' />
+              </div>
+              <input type="text" name="Enter OTP" className='xtrem-content' />
             </div>
           </div>
           <div className='main-form-button'>
