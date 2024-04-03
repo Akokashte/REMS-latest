@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import GalleryImageCard from '../components/GalleryImageCard'
 import "../styles/gallery.css";
 import GalleryCategory from '../components/GalleryCategory';
-import { HiOutlineDownload } from 'react-icons/hi';
 import axios from 'axios'
 
 const Gallery = () => {
@@ -69,8 +68,7 @@ const Gallery = () => {
                 </div>
             </div>
             <div className='load_more_btn_container'>
-                <div className='load_more_btn'>load more</div>
-                <HiOutlineDownload className='load_more_icon' />
+                <div className='load_more_btn'>Next >></div>
             </div>
         </section>
     )
