@@ -59,12 +59,11 @@
     cursor:pointer;
 }
 
-.load_more_icon{
-    font-size: var(--large);
-}
-
 .load_more_btn{
     text-transform: capitalize;
     padding: 1.2rem 0.8rem;
-    border-radius: 1.2rem;
+    border-radius: 0.5rem;
+    color: var(--text_light);
+    background-color: var(--bg_dark);
+    margin-bottom: 1.2rem;
 }

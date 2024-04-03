@@ -14,6 +14,7 @@
     height: 68vh;
     width: 100%;
 }
+
 .modal_wrapper{
     position: absolute;
     height: 68vh;
@@ -27,26 +28,30 @@
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    /* width:30rem; */
     width:50%;
-    height: 66vh;
+    min-height: auto;
+    max-height: 66vh;
     padding: 1.2rem 1.2rem;
     z-index: 100;
     border-radius: .2rem;
     background-color: var(--bg_light);
 }
+
 .para_btn_container{
-    height: 90%;
+    min-height: auto;
+    max-height: 55vh;
     display: flex;
     flex-direction: column;
 }
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .para_btn_container{
     height: 90%;
 }
+
 .para_btn_container .scrollbar{
-    height: auto;
-    max-height: 90%;
+    min-height: auto;
+    height: 90%;
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
@@ -57,9 +62,11 @@
     overflow-y: scroll;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
+
 .para_btn_container .scrollbar ::-webkit-scrollbar {
     display: none;
 }
+
 .head_para_of_modal_content{
     padding: 1rem 0.8rem;
     display: flex;
@@ -67,14 +74,17 @@
     gap: 1.2rem;
     background-color: rgb(222, 222, 222);
 }
+
 .head_para_of_modal_content p{
     text-align: justify;
     font-size: var(--extra_small);
     line-height: 1.8rem;
 }
+
 .head_para_of_modal_content h2{
   font-size: var(--below_medium);
 }
+
 .accept_btn{
     height: 10%;
     width: fit-content;
