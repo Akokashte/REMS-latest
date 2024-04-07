@@ -89,3 +89,100 @@
     margin: 40px 0;
     font-weight: 400;
 }
+
+
+/* mobile view  */
+@media (width<480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .carausal_outer {
+        width: 100%;
+        margin: 2.8rem 0;
+        height: 15rem;
+        /* background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(245, 237, 220, 1) 0%, rgba(250, 233, 251, 1) 100%); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_outer {
+        width: 75%;
+        height: 15rem;
+        /* background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(245, 237, 220, 1) 0%, rgba(250, 233, 251, 1) 100%); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+
+    .my_container {
+        width: 100%;
+        height: 100%;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+        border-radius: 0.8rem;
+        background-color: var(--bg_light);
+        box-shadow: 0px 0px 21px 2px rgb(203, 204, 208);
+        /* background-color: aqua; */
+        overflow: hidden;
+        border: 8px solid white;
+        position: relative;
+    }
+
+    .my_container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card_info {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        position: absolute;
+        background-color: #1f3d4738;
+        backdrop-filter: blur(5px);
+        color: white;
+        padding: 20px;
+        transition: 1.5s;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .my_container:hover .card_info {
+        right: 0;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-size: var(--below_medium);
+        font-weight: var(--mid);
+    }
+
+    .sub_title {
+        font-size: var(--extra_small);
+        font-weight: var(--regular);
+    }
+
+    .c_info {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 40px 0;
+        font-weight: 400;
+    }
+}

@@ -13,9 +13,9 @@ const Footer = () => {
                             <h1>Contact Us</h1>
                         </div>
                         <div id='contact-us-main'>
-                            <h2>Baitwadi,Bharne,Tal.khed,Dist. Ratnagiri 415709</h2>
+                            <h2>Baitwadi, Bharne,Tal.khed, Dist. Ratnagiri 415709</h2>
                             <h2>Telephone : 123456789</h2>
-                            <h2>Email : abs@gmail.com</h2>
+                            <h2>Email : rems21@gmail.com</h2>
                         </div>
                     </div>
                     <div id='footer-links'>

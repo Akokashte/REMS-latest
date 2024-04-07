@@ -16,8 +16,9 @@
     justify-content: center;
     align-items: center;
     padding-top: 1.5rem;
+    text-align: center;
     color: var(--text_dark_pink);
-    font-size: var(--below_medium);
+    font-size: var(--small);
 
 }
 

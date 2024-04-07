@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/navbar.css';
 import { HiOutlineDownload } from 'react-icons/hi';
 import { BiSearch } from 'react-icons/bi';
 import { AiOutlineDown } from 'react-icons/ai';
 import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
+
+    const [showHamburger,setShowHamburger] = useState(false)
     return (
         <>
             <header>
@@ -30,9 +34,14 @@ const Navbar = () => {
                 {/* second head part */}
                 <div className="head2">
                     <div className="head2_inner_container">
-                               <img src="remslogo.png" className="logo_container" />
-                        <nav className="navbar">
+                        <div className="logo_container">
+                                <img src="remslogo.png" alt="logo here" />
+                        </div>
+                        <nav className={!showHamburger ? "navbar mobile_navbar" :"navbar"}>
                             <ul>
+                            {showHamburger &&
+                                <div className="cross_icon"><IoMdClose onClick={()=>setShowHamburger(!showHamburger)} /></div>
+                            }
                                 <li><NavLink to="/">Home</NavLink></li>
                                 <li><NavLink to="/about">About</NavLink></li>
                                 <li><NavLink>Academics <AiOutlineDown className="down" /></NavLink>
@@ -60,8 +69,14 @@ const Navbar = () => {
                                 {/* <li><NavLink to="/facilities">Facilities</NavLink></li> */}
                             </ul>
                         </nav>
+                        
+                        <div className="hamburger_menu">
+                            <GiHamburgerMenu className="hamburger" onClick={()=>{setShowHamburger(!showHamburger)}} />
+                        </div>
+
                     </div>
                 </div>
+
             </header>
         </>
     )
