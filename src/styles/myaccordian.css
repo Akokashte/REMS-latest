@@ -37,23 +37,12 @@
     display: flex;
     gap: 1.2rem;
     visibility: hidden;
-<<<<<<< HEAD
     position: absolute;
-    transform: scale(0);
-    max-height: 0;
-    top: 0;
-=======
-    /* position: absolute; */
->>>>>>> ankit
     margin-top: 0;
     padding: 0 0;
     border-radius: 0 0 1.2rem 1.2rem;
     opacity: 0;
-<<<<<<< HEAD
-    transition: height 0.3s ease-in-out,top 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out,opacity 0.3s ease-in-out;
-=======
     transition: height 0.3s ease-in-out, margin-top 0.3s ease-in-out, padding 0.3s ease-in-out, border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
->>>>>>> ankit
 }
 
 .accordian_content_click {
@@ -67,11 +56,7 @@
     border-radius: 0 0 1.2rem 1.2rem;
     opacity: 1;
     overflow: hidden;
-<<<<<<< HEAD
-    transition: height 0.3s ease-in-out,top 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
-=======
     transition: height 0.3s ease-in-out, margin-top 0.3s ease-in-out, padding 0.3s ease-in-out, border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
->>>>>>> ankit
 }
 
 .accordian_content_head {
