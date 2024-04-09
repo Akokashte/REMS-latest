@@ -49,3 +49,39 @@
     width: 100%;
     object-fit: cover contain;
 }
+
+
+
+
+
+
+/* mobile css  */
+
+@media (width<480px){
+    .adpro1 {
+    }
+    
+    .adpro1-head {
+    }
+    
+    .adpro1-head h1 {
+        font-size: var(--large);
+        text-align: center;
+        line-height: 3rem;
+    }
+    
+    .adpro1-line {
+        height: 8vh;
+    }
+    
+    .adpro1-line div {
+    }
+    
+    .adpro1-image {
+        height: 15rem;
+    }
+    
+    .adpro1-image img {
+        border-radius: 0.5rem;
+    }
+}

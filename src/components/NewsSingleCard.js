@@ -5,7 +5,7 @@ const NewsSingleCard =()=>{
         <>
             <div className="newsCardContainer">
             <div className="newsImageWrapper">
-                <img src="admi2.png" />
+                <img src="admi2.png" alt="admissionImage"/>
             </div>
             <div className="paraLinkContainer">
                 <div className="newsHeadline">

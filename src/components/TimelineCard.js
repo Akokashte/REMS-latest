@@ -1,7 +1,7 @@
 import React from "react";
 
 const TimelineCard = (props) => {
-    const { year, content, setShowModal,showModal,setTimeline } = props
+    const { year, content, setShowModal,setTimeline } = props
     const handlePopUp =(year,desc)=>{
         setShowModal(true)
         setTimeline({year,content})

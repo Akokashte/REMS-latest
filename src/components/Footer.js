@@ -31,12 +31,12 @@ const Footer = () => {
                 </div>
                 <div id='copyright-area'>
                     <div id='copyright-area-socialmedia'>
-                        <NavLink target="__blank" to={"https://www.youtube.com/@rotaryschoolliveevent4606"}><GrYoutube size={42} color='#832996' /></NavLink>
-                        <NavLink target="__blank" to={"https://www.facebook.com/RotaryEMSKhed/"}><GrFacebook size={32} color='#832996' /></NavLink>
-                        <NavLink target="__blank" to={"https://www.instagram.com/rotaryems_khed/"}><GrInstagram size={32} color='#832996' /></NavLink>
+                        <NavLink target="__blank" to={"https://www.youtube.com/@rotaryschoolliveevent4606"}><GrYoutube className="social_icon" size={42} color='#832996' /></NavLink>
+                        <NavLink target="__blank" to={"https://www.facebook.com/RotaryEMSKhed/"}><GrFacebook className="social_icon" size={32} color='#832996' /></NavLink>
+                        <NavLink target="__blank" to={"https://www.instagram.com/rotaryems_khed/"}><GrInstagram className="social_icon" size={32} color='#832996' /></NavLink>
                     </div>
                     <div id='copyright-area-copy'>
-                        <h2>@Copyright | Privacy Policy | Designed by SARS</h2>
+                        <h2>@Copyright | Privacy Policy 2024 | Designed by SARS</h2>
                     </div>
                 </div>
             </div>

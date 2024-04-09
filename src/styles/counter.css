@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  /* background-color: red; */
   padding-bottom: 2rem;
 }
 
@@ -23,7 +22,6 @@
   justify-content: space-around;
   padding: 1em 0;
   position: relative;
-  /* font-size: var(--small); */
   border-radius: 0.5em;
   box-shadow: 0px 0px 10px rgb(191, 191, 191);
   background-color: var(--counter_bg_color);
@@ -76,7 +74,7 @@ span.text {
   }
   
   .container {
-    width: 8rem;
+    width: 10rem;
     height: 8rem;
     display: flex;
     flex-direction: column;
@@ -87,7 +85,8 @@ span.text {
     border-radius: 0.5em;
     box-shadow: 0px 0px 10px rgb(191, 191, 191);
     background-color: var(--counter_bg_color);
-    border-bottom: 10px solid rgb(253, 227, 175);
+    border-bottom: 10px solid rgb(118, 114, 114);
+    /* border-bottom: 10px solid rgb(253, 227, 175); */
   }
   
   i {
@@ -104,7 +103,7 @@ span.text {
   
   span.text {
     color: var(--text_dark);
-    font-size: var(--small);
+    font-size: var(--extra_small);
     text-align: center;
     pad: 0.7em 0;
     font-weight: var(--regular);

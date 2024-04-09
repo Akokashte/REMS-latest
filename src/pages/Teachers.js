@@ -22,9 +22,9 @@ const Teachers = () => {
     }
 
     useEffect(() => {
-        getTeacherData()
     }, [teachersData])
-
+    
+    getTeacherData()
     return (
         <>
             <section className="teachers_info_section">

@@ -39,7 +39,7 @@ const FacultyCategoryCard = () => {
                         <div key={index} className="faculty_category_card" onClick={()=>openTeacherInfo(section)}>
                             <div className="category_icon_text">
                                 <div className="section_image_wrapper">
-                                <img src={sectionImage} />
+                                <img src={sectionImage} alt="sectionimage here" />
                                 </div>
                                 <h2>{section}</h2>
                             </div>

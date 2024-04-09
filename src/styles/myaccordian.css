@@ -5,7 +5,7 @@
 }
 
 .my_accordian {
-    width: 70%;
+    width:80%;
     margin: 0 auto;
     border-radius: 1.2rem;
     line-height: 2rem;
@@ -42,7 +42,6 @@
     padding: 0 0;
     border-radius: 0 0 1.2rem 1.2rem;
     opacity: 0;
-    transition: height 0.3s ease-in-out, margin-top 0.3s ease-in-out, padding 0.3s ease-in-out, border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .accordian_content_click {
@@ -75,8 +74,57 @@
 
 
 
-/* color 0.15s ease-in-out,
-        background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out,
-        box-shadow 0.15s ease-in-out,
-        border-radius 0.15s ease; */
+
+
+
+
+/* mobile css */
+
+@media (width<480px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .my_accordian{
+        width: 90%;
+    }
+    .accordian_head {
+        gap: 0.5rem;
+        font-size: var(--extra_small);
+    }
+    
+    .faq_que{
+        width: 90%;
+    }
+
+    .accordian_head .accordian_dropdown_icon {
+        width: 10%;
+        font-size: 1.5rem;
+    }
+  
+    .accordian_content {
+        gap: 0;
+    }
+    
+    .accordian_content_click {
+        width: 100%;
+        display: flex;
+        gap: 0;
+    }
+    
+    .accordian_content_head {
+        width: 18%;
+        text-transform: capitalize;
+        font-size: var(--extra_small);
+        font-weight: var(--mid);
+    }
+    
+    .accordian_content_description {
+        width: 82%;
+        text-align: justify;
+        font-size: var(--extra_small);
+        font-weight: var(--regular);
+    }
+    
+}

@@ -1,23 +1,12 @@
 import React from "react";
 import "../styles/teacherCard.css";
-import axios from 'axios'
 
 const TeachersCard = ({ name, image, experience, qualification }) => {
-    const TeacherInfo = async () => {
-        try {
-            const teacher = await axios.get("http://localhost:5000/api/v1/fetch/teachers/")
-            console.log(teacher.data)
-
-        }
-        catch (error) {
-            console.log(error)
-        }
-    }
     return (
         <>
             <div className="teachers_card">
                 <div className="teacher_profile">
-                    <img src={image}></img>
+                    <img src={image} alt="teacherProfileImage"></img>
                 </div>
                 <div className="teacher_info">
                     <div className="name">
