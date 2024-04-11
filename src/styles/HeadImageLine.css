@@ -8,8 +8,7 @@
 
 .adpro1-head {
     width: 100%;
-    min-height: 15vh;
-    max-height: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +61,8 @@
     }
     
     .adpro1-head {
+        padding-top: 1.2rem;
+        padding-bottom: 0.2rem;
     }
     
     .adpro1-head h1 {

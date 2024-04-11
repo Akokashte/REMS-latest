@@ -5,7 +5,6 @@ import Sports from './pages/Sports'
 import Navbar from './components/Navbar';
 import Activity from './pages/Activity';
 import Admissionprocess from './pages/Admissionprocess';
-import EnquiryForm from './components/EnquiryForm';
 import NotFound from './pages/NotFound';
 import Chairman from './components/Chairman';
 import Principal from './components/Principal';
@@ -22,6 +21,7 @@ import Annualevents from './pages/Annualevents';
 import Gallery from './pages/Gallery'
 import Achievements from './pages/Achievements';
 import MyAccordian from './components/MyAccordian';
+import EnquiryPage from './pages/EnquiryPage';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
         <Route path='/activity' element={<Activity />} />
         <Route path='/admissionprocess' element={<Admissionprocess />} />
         <Route path='/admissionpolicy' element={<Admissionpolicy />} />
-        <Route path='/enquiry' element={<EnquiryForm />} />
+        <Route path='/enquiry' element={<EnquiryPage />} />
         <Route path='/annualevents' element={<Annualevents />} />
         <Route path='/achievements' element={<Achievements />} />
         <Route path='/gallery' element={<Gallery />} />

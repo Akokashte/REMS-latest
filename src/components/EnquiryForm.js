@@ -212,9 +212,13 @@ const EnquiryForm = () => {
               <h2>Any Questions?</h2>
               <input type="text" name="moreQueries" className='desptn-content' onChange={onChangeOfInputFields} value={enquiryFormData.moreQueries} autoComplete='false' />
             </div>
-            <div id='xtrem-down-right'>
+            <div id='xtrem-down-right' className={otpStatus.isOtpSent ? '':'field_hidden'}>
               <div id='otp-btns'>
+              {
+                !otpStatus.isOtpVerified ? 
                 <input type="button" name="getOtp" value="Get OTP" id='otp' onClick={sendOtpRequest} />
+                :""
+              }
                 {
                   otpStatus.isOtpSent &&
                   <input type="button" name='verifyInputOtp' value="Verify OTP" id='otp' onClick={verifyOtp} />
@@ -222,11 +226,11 @@ const EnquiryForm = () => {
               </div>
               {
                 otpStatus.isOtpSent &&
-                <input type="number" name="otp" className='xtrem-content' onChange={onChangeOfInputFields} value={enquiryFormData.otp} required autoComplete='false' />
+                <input type="number" name="otp" className= {otpStatus.isOtpSent ?'xtrem-content':'field_hidden'} onChange={onChangeOfInputFields} value={enquiryFormData.otp} required autoComplete='false' />
               }
             </div>
           </div>
-          <div className='main-form-button'>
+          <div className={otpStatus.isOtpVerified ?'main-form-button' : 'field_hidden'}>
             {
               otpStatus.isOtpVerified &&
               <input type="submit" value="Submit" id='form-button' />

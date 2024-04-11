@@ -78,3 +78,82 @@
     font-size: var(--small);
     font-weight: var(--regular);
 }
+
+
+
+
+
+
+
+/* mobile css */
+
+@media (width<480px) {
+    .faculty_class_container {
+    }
+
+    .center_faculty_class_container {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .faculty_category_card {
+        width: 100%;
+        height: auto;
+    }
+
+    .faculty_category_card:hover {
+        transform: translate3d(0, 0, 2rem);
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .category_icon_text {
+        height: auto;
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .section_image_wrapper {
+        width: 100%;
+        height: 10rem;
+        display: flex;
+    }
+
+    .section_image_wrapper img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 1.2rem;
+    }
+
+    .category_icon_text:first-child {
+        font-size: var(--card_icon_size);
+        color: var(--icon_color_primary);
+    }
+
+    .category_icon_text h2 {
+        width: 100%;
+        font-size: var(--medium);
+        text-align: center;
+        text-transform: capitalize;
+        color: var(--bg_text);
+        line-height: 2rem;
+    }
+
+    .category_description p {
+        height: auto;
+        text-align: justify;
+        color: var(--para_text_color);
+        word-spacing: -0.1rem;
+        line-height: 2.1;
+        font-size: var(--extra_small);
+        font-weight: var(--regular);
+    }
+}

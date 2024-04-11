@@ -34,15 +34,12 @@ const Home = () => {
               <div className='admission_btn'><p>admissions open for AY 2023-24</p> </div>
             </div>
           </motion.div>
-          <motion.div className='right_section'
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+          <div className='right_section'
           >
             <div className='inner_section'>
               <img src="herosection.png" alt="" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
       <motion.div className='home2'

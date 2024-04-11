@@ -10,6 +10,11 @@ import { IoMdClose } from "react-icons/io";
 const Navbar = () => {
 
     const [showHamburger,setShowHamburger] = useState(false)
+
+
+    const afterLinkClick=()=>{
+        setShowHamburger(false)
+    }
     return (
         <>
             <header>
@@ -42,30 +47,30 @@ const Navbar = () => {
                             {showHamburger &&
                                 <div className="cross_icon"><IoMdClose onClick={()=>setShowHamburger(!showHamburger)} /></div>
                             }
-                                <li><NavLink to="/">Home</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
+                                <li onClick={afterLinkClick}><NavLink to="/">Home</NavLink></li>
+                                <li onClick={afterLinkClick}><NavLink to="/about">About</NavLink></li>
                                 <li><NavLink>Academics <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
-                                        <li><NavLink to="/curriculum">The Right Curriculum</NavLink></li>
-                                        <li><NavLink to="/rightfaculty">The Right Faculty</NavLink></li>
-                                        <li><NavLink to="/activity">Activities</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/curriculum">The Right Curriculum</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/rightfaculty">The Right Faculty</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/activity">Activities</NavLink></li>
                                         {/* <li><NavLink to="#">Councelling</NavLink></li> */}
                                     </ul>
                                 </li>
                                 <li><NavLink>Admission <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
-                                        <li><NavLink to="/admissionprocess">Admission Process</NavLink></li>
-                                        <li><NavLink to="/admissionpolicy">Policies</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/admissionprocess">Admission Process</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/admissionpolicy">Policies</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink>Events <AiOutlineDown className="down" /></NavLink>
-                                    <ul className="dropdown">
-                                        <li><NavLink to="annualevents">Annual Events</NavLink></li>
-                                        <li><NavLink to="achievements">Achievements</NavLink></li>
-                                        <li><NavLink to="gallery">Gallery</NavLink></li>
+                                    <ul className="dropdown" style={!showHamburger ? {visibility:"hidden"} :null}>
+                                        <li onClick={afterLinkClick}><NavLink to="annualevents">Annual Events</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="achievements">Achievements</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="gallery">Gallery</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink to="/infrastructure">Infrastructure</NavLink></li>
+                                <li onClick={afterLinkClick}><NavLink to="/infrastructure">Infrastructure</NavLink></li>
                                 {/* <li><NavLink to="/facilities">Facilities</NavLink></li> */}
                             </ul>
                         </nav>

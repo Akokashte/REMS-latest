@@ -114,14 +114,14 @@
     }
     
     .accordian_content_head {
-        width: 18%;
+        width: 28%;
         text-transform: capitalize;
         font-size: var(--extra_small);
         font-weight: var(--mid);
     }
     
     .accordian_content_description {
-        width: 82%;
+        width: 72%;
         text-align: justify;
         font-size: var(--extra_small);
         font-weight: var(--regular);
