@@ -64,7 +64,7 @@ const Navbar = () => {
                                     </ul>
                                 </li>
                                 <li><NavLink>Events <AiOutlineDown className="down" /></NavLink>
-                                    <ul className="dropdown" style={!showHamburger ? {visibility:"hidden"} :null}>
+                                    <ul className="dropdown">
                                         <li onClick={afterLinkClick}><NavLink to="annualevents">Annual Events</NavLink></li>
                                         <li onClick={afterLinkClick}><NavLink to="achievements">Achievements</NavLink></li>
                                         <li onClick={afterLinkClick}><NavLink to="gallery">Gallery</NavLink></li>

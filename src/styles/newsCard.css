@@ -1,40 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.newsCardOuterContainer{
+
+.newsCardOuterContainer {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     padding: 2rem 0;
 }
-.newsCardInnerContainer{
+
+.newsCardInnerContainer {
     width: 90%;
     display: flex;
     justify-content: center;
     gap: 2rem;
     height: auto;
 }
-.newsCardContainer{
+
+.newsCardContainer {
     width: 307.83px;
     height: 394.91px;
     border-radius: 20px;
-    background-image:var(--chairman_bg_gradient);
+    background-image: var(--chairman_bg_gradient);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.newsImageWrapper{
+
+.newsImageWrapper {
     width: 100%;
     height: 52%;
 }
-.newsImageWrapper img{
+
+.newsImageWrapper img {
     object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 20px;
+    transition: opacity 0.3s ease-in-out;
 }
-.paraLinkContainer{
+
+.paraLinkContainer {
     height: 48%;
     display: flex;
     flex-direction: column;
@@ -42,42 +49,70 @@
     align-items: center;
     justify-content: space-between;
 }
-.paraLinkContainer .newsHeadline{
+
+.paraLinkContainer .newsHeadline {
     width: 90%;
     height: 100%;
-    font-size: var(--below_medium);
+    font-size: var(--small);
+    line-height: 1.8rem;
     font-weight: 600;
     padding-top: 1rem;
-    color:var(--text_dark_pink);
+    color: var(--text_dark_pink);
 }
-.paraLinkContainer .readMoreLink{
+
+.paraLinkContainer .readMoreLink {
     width: 90%;
     font-weight: var(--bold);
     text-transform: capitalize;
     cursor: pointer;
 }
 
+.next_prev_btn_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
 
+.next_btn {
+    width: 8rem;
+    height: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    color: var(--text_light);
+    cursor: pointer;
+    background-color: var(--bg_dark);
+    transition: transform 0.3s ease-in-out;
+}
 
-
+.next_btn:hover {
+    transform: scale(1.2, 1.2);
+}
 
 
 /* mobile css */
 
-@media (width<480px){
-    *{
+@media (width<480px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    .newsCardOuterContainer{
+
+    .newsCardOuterContainer {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
         padding: 2rem 0;
     }
-    .newsCardInnerContainer{
+
+    .newsCardInnerContainer {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -85,24 +120,28 @@
         gap: 2rem;
         height: auto;
     }
-    .newsCardContainer{
+
+    .newsCardContainer {
         width: 307.83px;
         height: 394.91px;
         border-radius: 20px;
-        background-image:var(--chairman_bg_gradient);
+        background-image: var(--chairman_bg_gradient);
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
-    .newsImageWrapper{
+
+    .newsImageWrapper {
         width: 100%;
         height: 52%;
     }
-    .newsImageWrapper img{
+
+    .newsImageWrapper img {
         object-fit: cover;
         height: 100%;
         width: 100%;
         border-radius: 20px;
     }
-    .paraLinkContainer{
+
+    .paraLinkContainer {
         height: 48%;
         display: flex;
         flex-direction: column;
@@ -110,19 +149,21 @@
         align-items: center;
         justify-content: space-between;
     }
-    .paraLinkContainer .newsHeadline{
+
+    .paraLinkContainer .newsHeadline {
         width: 90%;
         height: 100%;
         font-size: var(--below_medium);
         font-weight: 600;
         padding-top: 1rem;
-        color:var(--text_dark_pink);
+        color: var(--text_dark_pink);
     }
-    .paraLinkContainer .readMoreLink{
+
+    .paraLinkContainer .readMoreLink {
         width: 90%;
         font-weight: var(--bold);
         text-transform: capitalize;
         cursor: pointer;
     }
-    
+
 }

@@ -21,11 +21,11 @@ const Footer = () => {
                     <div id='footer-links'>
                         <h1>Quick Links</h1>
                         <ul>
-                            <li><NavLink to="/about">Home </NavLink></li>
-                            <li><NavLink to="/">About Us</NavLink></li>
+                            <li><NavLink to="/">Home </NavLink></li>
+                            <li><NavLink to="/about">About Us</NavLink></li>
                             <li><NavLink to="/infrastructure">Infrastructure</NavLink></li>
                             <li><NavLink to="/gallery">Gallery</NavLink></li>
-                            <li><NavLink to="/about">Message</NavLink></li>
+                            <li><NavLink to="/admissionpolicy">Academic Process</NavLink></li>
                         </ul>
                     </div>
                 </div>

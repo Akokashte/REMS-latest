@@ -28,7 +28,6 @@ const Timeline = () => {
         }
     }
 
-    console.log(showModal)
     const closePopup = () => {
         popup && setPopup("")
         showModal && setShowModal(false)

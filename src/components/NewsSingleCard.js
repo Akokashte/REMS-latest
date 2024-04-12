@@ -1,17 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const NewsSingleCard =()=>{
+const NewsSingleCard =({ImageSource,newsHeadline,newsDescription})=>{
+    const navigate = useNavigate()
+
     return(
         <>
             <div className="newsCardContainer">
             <div className="newsImageWrapper">
-                <img src="admi2.png" alt="admissionImage"/>
+                <img src={ImageSource} alt="admissionImage"/>
             </div>
             <div className="paraLinkContainer">
                 <div className="newsHeadline">
-                Here first news headline comes and this is dummy one
+                {
+                    newsHeadline.slice(0,65)
+                }
+                    ...
                 </div>
-                <div className="readMoreLink">
+                <div className="readMoreLink" onClick={()=>navigate("/newspage",{state:{ImageSource,newsHeadline,newsDescription}})}>
                     read more
                 </div>
             </div>

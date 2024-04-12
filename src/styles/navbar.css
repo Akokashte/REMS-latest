@@ -255,7 +255,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
     .mobile_navbar {
         height: 0;
-        transform: translateY(-16rem);
+        transform: translateY(-21rem);
     }
 
     .head2 {

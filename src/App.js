@@ -22,6 +22,7 @@ import Gallery from './pages/Gallery'
 import Achievements from './pages/Achievements';
 import MyAccordian from './components/MyAccordian';
 import EnquiryPage from './pages/EnquiryPage';
+import News from './pages/News';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path='/chairman' element={<Chairman />} />
         <Route path='/principal' element={<Principal />} />
         <Route path='/news' element={<NewsCard />} />
+        <Route path='/newspage' element={<News />} />
         <Route path='/curriculum' element={<Curriculum />} />
         <Route path='/rightfaculty' element={<RightFaculty />} />
         <Route path='/infrastructure' element={<Infrastructure />} />
