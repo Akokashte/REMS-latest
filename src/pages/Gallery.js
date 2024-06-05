@@ -67,9 +67,9 @@ const Gallery = () => {
                     }
                 </div>
             </div>
-            <div className='load_more_btn_container'>
+            {/* <div className='load_more_btn_container'>
                 <div className='load_more_btn'>Next >></div>
-            </div>
+            </div> */}
         </section>
     )
 }

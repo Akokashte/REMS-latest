@@ -14,12 +14,12 @@ const Admissionprocess = () => {
   return (
     <>
       <HeadImageLine headLine={"Admission Process"} featuredImage={"admissionfinal.png"} />
-      <div className="adpro2" >
+      {/* <div className="adpro2" >
         <input type="button" value="Admission Process" className="ad-btn" />
         <input type="button" value="Documents List" className="ad-btn" />
         <input type="button" value="Age Norms" className="ad-btn" />
         <input type="button" value="Enquiry Form" className="ad-btn" />
-      </div>
+      </div> */}
       <div className='accordion'>
         <div className='accordion-inner'>
           <div className='acc-head'>
@@ -55,7 +55,7 @@ const Admissionprocess = () => {
         />
       </div>
       <EnquiryForm />
-      <Quicklinks />
+      {/* <Quicklinks /> */}
     </>
 
   )

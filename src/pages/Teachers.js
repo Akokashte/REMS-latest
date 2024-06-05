@@ -22,9 +22,9 @@ const Teachers = () => {
     }
 
     useEffect(() => {
-    }, [teachersData])
+        getTeacherData()
+    }, [])
     
-    getTeacherData()
     return (
         <>
             <section className="teachers_info_section">
@@ -35,13 +35,16 @@ const Teachers = () => {
                     <div className="teacher_card_wrapper">
                         {
                             teachersData.map((curElem, index) => {
-                                const { experience, profileImage, qualification, teacherName } = curElem;
+                                console.log(curElem)
+                                const { experience, profileImage, qualification, teacherName, subjects } = curElem;
                                 return <TeachersCard
                                     key={index}
                                     name={teacherName}
                                     image={profileImage}
                                     experience={experience}
-                                    qualification={qualification} />
+                                    qualification={qualification} 
+                                    subjects={subjects}
+                                    />
                             })
                         }
                     </div>

@@ -36,6 +36,7 @@
     height: fit-content;
     padding: 1rem 0;
     max-height: auto;
+    margin-top: 2rem;
     background: var(--primary_bg_gradient);
     display: flex;
     justify-content: center;
