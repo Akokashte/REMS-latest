@@ -17,6 +17,7 @@
     padding: 1.2rem 1.2rem;
     border: 1px solid #9750a6;
     background-color: var(--bg_light);
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .accordian_head {
@@ -36,29 +37,28 @@
 .accordian_content {
     display: flex;
     gap: 1.2rem;
-    visibility: hidden;
+    /* visibility: hidden; */
+    height: 0;
+    overflow: hidden;
     position: absolute;
     margin-top: 0;
     padding: 0 0;
     border-radius: 0 0 1.2rem 1.2rem;
-    opacity: 0;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .accordian_content_click {
     display: flex;
-    height: auto;
     gap: 0;
-    position: relative;
     border-top: 1px solid #9750a6;
     margin-top: 1rem;
     padding: 1rem 0;
     border-radius: 0 0 1.2rem 1.2rem;
-    opacity: 1;
     overflow: hidden;
-    transition: height 0.3s ease-in-out, margin-top 0.3s ease-in-out, padding 0.3s ease-in-out, border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .accordian_content_head {
+    overflow: hidden;
     text-transform: capitalize;
     font-size: var(--extra_small);
     font-weight: var(--mid);
@@ -67,6 +67,7 @@
 }
 
 .accordian_content_description {
+    overflow: hidden;
     font-size: var(--extra_small);
     font-weight: var(--regular);
     width: 90%;
