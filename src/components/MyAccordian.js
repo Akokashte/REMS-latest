@@ -21,7 +21,10 @@ const MyAccordian = (props) => {
                 </div>
                 {accordian_content.map((curElem, index) => {
                     return (
-                        <motion.div
+                        trigger &&
+                        <motion.div initial={{ height: 0 }}
+                            animate={{ height: "auto" }}
+                            exit={{ height: 0 }}
                             key={index} className={trigger ? "accordian_content_click" : "accordian_content"} >
                             <div className="accordian_content_head">
                                 {curElem.content_head}
@@ -30,6 +33,7 @@ const MyAccordian = (props) => {
                                 {curElem.content_description}
                             </div>
                         </motion.div>
+                        
                     )
                 })
                 }
