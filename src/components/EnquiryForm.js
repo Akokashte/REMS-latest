@@ -179,19 +179,19 @@ const EnquiryForm = () => {
               <h2>Standard</h2>
               <select name="standard" className='form-content' onChange={onChangeOfInputFields} value={enquiryFormData.standard} required autoComplete='false' >
                 <option value="">Select Standard...</option>
-                <option value="nursery">Nursury</option>
+                <option value="nursery">Nursery</option>
                 <option value="juniorkg">Jr. Kg.</option>
                 <option value="seniorkg">Sr. Kg.</option>
                 <option value="first">First</option>
                 <option value="second">Second</option>
                 <option value="third">Third</option>
-                <option value="fourth">Forth</option>
+                <option value="fourth">Fourth</option>
                 <option value="fifth">Fifth</option>
                 <option value="sixth">Sixth</option>
                 <option value="seventh">Seventh</option>
                 <option value="eighth">Eighth</option>
-                <option value="nineth">Nineth</option>
-                <option value="tenth">tenth</option>
+                <option value="nineth">Ninth</option>
+                <option value="tenth">Tenth</option>
                 <option value="eleven">Eleventh</option>
               </select>
             </div>

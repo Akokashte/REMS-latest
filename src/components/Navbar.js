@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import '../styles/navbar.css';
 import { HiOutlineDownload } from 'react-icons/hi';
 import { BiSearch } from 'react-icons/bi';
@@ -6,15 +6,42 @@ import { AiOutlineDown } from 'react-icons/ai';
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
-
     const [showHamburger,setShowHamburger] = useState(false)
-
+    const [brochureLink,setBrochureLink] = useState("")
+    console.log(brochureLink)
+    const getBrochure=async()=>{
+        try {
+            const brochureLinkResponse = await axios.get("http://localhost:5000/api/v1/brochure/get")
+            if(brochureLinkResponse){
+                setBrochureLink(brochureLinkResponse.data.data[0].brochureUrl)
+                const link = document.createElement("a");
+                link.href = brochureLink;
+                link.download = "REMS_brochure.pdf"; // specify the filename
+                link.target="_blank"
+                document.body.appendChild(link);
+                link.click();
+            }
+        } catch (err) {
+            toast.success('server error !', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
+        }
+    }
 
     const afterLinkClick=()=>{
         setShowHamburger(false)
     }
+
     return (
         <>
             <header>
@@ -22,7 +49,7 @@ const Navbar = () => {
                     <div className="innerhead_part">
                         <div className="download_section">
                             <HiOutlineDownload className="download_icon" />
-                            <NavLink to='#' className="brochure" >Download Brochure</NavLink>
+                            <NavLink onClick={getBrochure} className="brochure" >Download Brochure</NavLink>
                         </div>
                         <div className="searchgroup">
                             <div className="search_container">
@@ -66,7 +93,7 @@ const Navbar = () => {
                                 <li><NavLink>Events <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
                                         <li onClick={afterLinkClick}><NavLink to="annualevents">Annual Events</NavLink></li>
-                                        <li onClick={afterLinkClick}><NavLink to="achievements">Achievements</NavLink></li>
+                                        {/* <li onClick={afterLinkClick}><NavLink to="achievements">Achievements</NavLink></li> */}
                                         <li onClick={afterLinkClick}><NavLink to="gallery">Gallery</NavLink></li>
                                     </ul>
                                 </li>

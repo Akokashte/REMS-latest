@@ -101,6 +101,7 @@
     justify-content: center;
     align-items: center;
     color: #dc7603;
+    text-transform: capitalize;
     padding-top: 2rem;
 }
 
@@ -152,4 +153,132 @@
     width: 100%;
     height: 70vh;
     background-color: yellow;
+}
+
+
+
+
+/* mobile css */
+@media(width<480px){
+    .events-outer {
+        font-size: 1rem;
+    }
+    
+    .events-outer .sports {
+        height: auto;
+        display: flex;
+    }
+    
+    .events-outer .sports .sports-heading {
+        width: 90%;
+        height: auto;
+    }
+    
+    .sports-heading h1 {
+        padding-top: 2rem;
+        color: #832996;
+        text-align: center;
+    }
+    
+    .sports-heading h2 {
+        padding: 0.5rem 0;
+    }
+    
+    .events-outer .sports .sports-dscptn {
+        width: 80%;
+        height: auto;
+    }
+    
+    .events-outer .sports .sports-dscptn h2 {
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 1.2rem 0;
+        line-height: 2.4rem;
+    }
+    
+    .events-theatre {
+        width: 100%;
+        height: auto;
+        gap: 1.5rem;
+        padding-bottom: 1.2rem;
+        flex-direction: column;
+    }
+    
+    .events-theatre h1 {
+        text-align: center;
+    }
+    
+    .events-imgs {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .events-imgs img {
+        border-radius: 1.2rem;
+    }
+    
+    .events-outer .cultural-events {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    .events-outer .cultural-events .events-heading {
+        width: 100%;
+        height: auto;
+        font-size: 1.2rem;
+        display: flex;
+        color: #dc7603;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .events-heading h1{
+        width: 100%;
+        margin-bottom: 1.1rem;
+        text-align: center;
+    }
+    
+    .events-outer .cultural-events .events-dscptn {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .events-outer .cultural-events .events-dscptn h2 {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    
+    .events-outer .cultural-events .events-imgs {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 2rem;
+        gap: 1.2rem;
+    }
+    
+    .events-outer .cultural-events .events-imgs .events-theatre {
+        width: 100%;
+        height: auto;
+        gap: 1.2rem;
+        flex-direction: column;
+    }
+    
+    .events-outer .cultural-events .events-imgs .events-theatre img {
+        height: auto;
+    }
+    
+    .events-imgs .events-theatre h1{
+        font-size: 1.8rem;
+    }
+
+    .events-outer .exhibitions {
+        height: auto;
+    }
+    
 }

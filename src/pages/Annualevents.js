@@ -17,7 +17,6 @@ const Annualevents = () => {
                             Students are given a vast array of choices for sports including football, cricket, table tennis, carrom, yoga, skating and chess.</h2>
                     </div>
                     <div className='events-imgs'>
-
                         <div className='events-theatre'>
                             <h1>Cricket</h1>
                             <img src="cricket.jpg" alt="" />

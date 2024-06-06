@@ -12,12 +12,11 @@ export const Gallerycat = [
         id: 2
     },
     {
-        text: "singing",
-        id: 3
-    },
-
-    {
-        text: "sketting",
+        text: "academics",
         id: 4
+    },
+    {
+        text: "celebrations",
+        id: 5
     },
 ]
