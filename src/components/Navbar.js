@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/navbar.css';
 import { HiOutlineDownload } from 'react-icons/hi';
 import { BiSearch } from 'react-icons/bi';
 import { AiOutlineDown } from 'react-icons/ai';
 import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
+
+    const [showHamburger,setShowHamburger] = useState(false)
+
+
+    const afterLinkClick=()=>{
+        setShowHamburger(false)
+    }
     return (
         <>
             <header>
@@ -31,43 +40,48 @@ const Navbar = () => {
                 <div className="head2">
                     <div className="head2_inner_container">
                         <div className="logo_container">
-                            <img src="mainlogo.jpg" alt="logo here" />
-                            <div className="logo_title">
-                                <h1>Rotary</h1>
-                                <span>English Medium School</span>
-                            </div>
+                                <img src="remslogo.png" alt="logo here" />
                         </div>
-                        <nav className="navbar">
+                        <nav className={!showHamburger ? "navbar mobile_navbar" :"navbar"}>
                             <ul>
-                                <li><NavLink to="/">Home</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
+                            {showHamburger &&
+                                <div className="cross_icon"><IoMdClose onClick={()=>setShowHamburger(!showHamburger)} /></div>
+                            }
+                                <li onClick={afterLinkClick}><NavLink to="/">Home</NavLink></li>
+                                <li onClick={afterLinkClick}><NavLink to="/about">About</NavLink></li>
                                 <li><NavLink>Academics <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
-                                        <li><NavLink to="/curriculum">The Right Curriculum</NavLink></li>
-                                        <li><NavLink to="/rightfaculty">The Right Faculty</NavLink></li>
-                                        <li><NavLink to="/activity">Activities</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/curriculum">The Right Curriculum</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/rightfaculty">The Right Faculty</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/activity">Activities</NavLink></li>
                                         {/* <li><NavLink to="#">Councelling</NavLink></li> */}
                                     </ul>
                                 </li>
                                 <li><NavLink>Admission <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
-                                        <li><NavLink to="/admissionprocess">Admission Process</NavLink></li>
-                                        <li><NavLink to="/admissionpolicy">Policies</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/admissionprocess">Admission Process</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="/admissionpolicy">Policies</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink>Events <AiOutlineDown className="down" /></NavLink>
                                     <ul className="dropdown">
-                                        <li><NavLink to="annualevents">Annual Events</NavLink></li>
-                                        <li><NavLink to="achievements">Achievements</NavLink></li>
-                                        <li><NavLink to="gallery">Gallery</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="annualevents">Annual Events</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="achievements">Achievements</NavLink></li>
+                                        <li onClick={afterLinkClick}><NavLink to="gallery">Gallery</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink to="/infrastructure">Infrastructure</NavLink></li>
+                                <li onClick={afterLinkClick}><NavLink to="/infrastructure">Infrastructure</NavLink></li>
                                 {/* <li><NavLink to="/facilities">Facilities</NavLink></li> */}
                             </ul>
                         </nav>
+                        
+                        <div className="hamburger_menu">
+                            <GiHamburgerMenu className="hamburger" onClick={()=>{setShowHamburger(!showHamburger)}} />
+                        </div>
+
                     </div>
                 </div>
+
             </header>
         </>
     )

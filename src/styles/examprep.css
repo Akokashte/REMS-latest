@@ -1,0 +1,62 @@
+.examprep_outer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2.5rem;
+}
+
+.carousal_heading {
+    width: 100%;
+    line-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text_dark_pink);
+    font-size: var(--small);
+}
+
+
+.my_actual_cards {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/* mobile css */
+
+@media (width<480px){
+    .examprep_outer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 2.5rem;
+    }
+    
+    .carousal_heading {
+        width: 100%;
+        line-height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--text_dark_pink);
+        font-size: var(--extra_small);
+    }
+    
+    
+    .my_actual_cards {
+        width: 100%;
+        height: auto;
+    }
+}

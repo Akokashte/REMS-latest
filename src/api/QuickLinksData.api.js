@@ -1,4 +1,4 @@
-import { FaLocationDot, FaIndianRupeeSign, FaWpforms, FaEnvelopeOpenText } from 'react-icons/fa6'
+import { FaIndianRupeeSign, FaWpforms, FaEnvelopeOpenText } from 'react-icons/fa6'
 import { FaBusSimple, FaHandshakeSimple, FaPersonChalkboard, FaChildReaching } from 'react-icons/fa6'
 
 

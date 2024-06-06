@@ -79,3 +79,49 @@
     color: var(--bg_text);
   }
   
+
+
+
+
+
+  /* mobile css */
+  @media (width<480px){
+    .home6 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    
+    .home6 .home6info {
+      width: 90%;
+      height: auto;
+      border-radius: 2rem;
+    }
+    
+    .home6 .home6info .info {
+      width: 100%;
+      min-height: auto;
+      background: var(--primary_bg_gradient);
+      border-radius: 2rem 2rem 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+    }
+    
+    .home6 .home6info .links {
+      background: var(--primary_bg_gradient);
+      width: 100%;
+      height: auto;
+      border-bottom-left-radius: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 2rem 0;
+    }
+  }

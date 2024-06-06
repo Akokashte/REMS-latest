@@ -13,16 +13,16 @@ const FaqAccordian = (props) => {
 
     return (
         <>
-            <div className="my_accordian" onClick={() => RaseTrigger()} style={{ width: "80%" }}>
+            <div className="my_accordian" onClick={() => RaseTrigger()} >
                 <div className="accordian_head">
-                    <span>{faq_accordian_question}</span>
+                    <span className="faq_que">{faq_accordian_question}</span>
                     <IoIosArrowDropdown className="accordian_dropdown_icon" style={{ transform: trigger ? "rotate(180deg)" : null }} />
                 </div>
                 <div className={trigger ? "accordian_content_click" : "accordian_content"} >
-                    <div className="accordian_content_head" style={{width:"4%"}}>
+                    <div className="accordian_content_head" >
                         Ans :
                     </div>
-                    <div className="accordian_content_description" style={{width:"96%"}}>
+                    <div className="accordian_content_description">
                         {faq_accordian_ans}
                     </div>
                 </div>

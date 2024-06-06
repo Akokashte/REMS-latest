@@ -28,10 +28,10 @@ const Infrastructure = () => {
                         <div className="library_inner_wrapper">
                             <div className="library_image">
                                 <div className="img_card">
-                                    <img src="lib2.jpg" />
+                                    <img src="lib2.jpg" alt="libraryImage" />
                                 </div>
                                 <div className="img_card">
-                                    <img src="library.jpg" />
+                                    <img src="library.jpg" alt="libraryImage"/>
                                 </div>
                             </div>
                             <div className="library_content">
@@ -50,13 +50,13 @@ const Infrastructure = () => {
                         </h1>
                         <div className="campus_image_card_container">
                             <div className="campus_image_card">
-                                <img src="physics.png" />
+                                <img src="physics.png" alt="subjectImage" />
                             </div>
                             <div className="campus_image_card">
-                                <img src="chemistry.jpg" />
+                                <img src="chemistry.jpg" alt="subjectImage" />
                             </div>
                             <div className="campus_image_card">
-                                <img src="physics.png" />
+                                <img src="physics.png" alt="subjectImage" />
                             </div>
                         </div>
                         <div className="laboratory_inner_container">
@@ -80,10 +80,10 @@ const Infrastructure = () => {
                         </h1>
                         <div className="campus_image_card_container">
                             <div className="campus_image_card">
-                                <img src="class.jpeg" />
+                                <img src="class.jpeg" alt="classImage"/>
                             </div>
                             <div className="campus_image_card">
-                                <img src="class1.jpg" />
+                                <img src="class1.jpg" alt="classImage" />
                             </div>
                         </div>
                         <div className="laboratory_inner_container">

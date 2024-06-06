@@ -1,32 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/teachers.css";
 import TeachersCard from "../components/TeachersCard";
-import { teachers } from "../api/TeachersData.api";
 import { useLocation } from "react-router-dom";
+import axios from "axios";
 
 const Teachers = () => {
+    const [teachersData, setTeachersData] = useState([])
+
     const location = useLocation()
-    const clickedExpertise = location.state;
-    console.log(clickedExpertise)
+    const clickedSection = location.state;
+    
+    const getTeacherData = async () => {
+        try {
+            const response = await axios.get('http://localhost:5000/api/v1/teachers/fetchall',
+                { params: { section: clickedSection } }
+            )
+            setTeachersData(response.data.data)
+        } catch (err) {
+            alert("something went wrong while fetching teachers data!")
+        }
+    }
+
+    useEffect(() => {
+    }, [teachersData])
+    
+    getTeacherData()
     return (
         <>
             <section className="teachers_info_section">
                 <div className="teachers_info_inner_section">
                     <div className="subject_name">
-                        <h1>{clickedExpertise} Faculty</h1>
+                        <h1>{clickedSection} Faculty</h1>
                     </div>
                     <div className="teacher_card_wrapper">
                         {
-                            teachers.map((curElem, index) => {
-                                const { name, image, experience, qualification, expertise } = curElem;
-                                console.log(expertise)
-                                return expertise === clickedExpertise &&
-                                    <TeachersCard
-                                        key={index}
-                                        name={name}
-                                        image={image}
-                                        experience={experience}
-                                        qualification={qualification} />
+                            teachersData.map((curElem, index) => {
+                                const { experience, profileImage, qualification, teacherName } = curElem;
+                                return <TeachersCard
+                                    key={index}
+                                    name={teacherName}
+                                    image={profileImage}
+                                    experience={experience}
+                                    qualification={qualification} />
                             })
                         }
                     </div>

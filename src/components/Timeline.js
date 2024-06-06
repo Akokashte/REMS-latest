@@ -1,59 +1,38 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/timeline.css";
 import TimelineCard from "./TimelineCard";
-import { IoCloseCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import Modal from "./Modal";
+import axios from "axios";
 
 const Timeline = () => {
 
     const [popup, setPopup] = useState("")
+    const [showModal, setShowModal] = useState(false)
+    const [timeline, setTimeline] = useState({})
+    const [timelineData,setTimelineData] = useState([])
+    
+    useEffect(()=>{
+       getTimeline()
+    },[timelineData])
+
+    const getTimeline=async()=>{
+        try {
+            const timelines =  await axios.get("http://localhost:5000/api/v1/timeline/getdata")
+            if(!timelines){
+              alert("error while fetching data from backend")
+            }
+            setTimelineData(timelines.data.data)
+        } catch (error) {
+            alert("something went wrong while fetching data from backend !")
+        }
+    }
 
     const closePopup = () => {
         popup && setPopup("")
+        showModal && setShowModal(false)
     }
 
-    const timelines = [
-        {
-            year: "2007",
-            image_url: "timeline1.png"
-        },
-        {
-            year: "2009",
-            image_url: "timeline2.png"
-        },
-        {
-            year: "2010",
-            image_url: "timeline1.png"
-        },
-        {
-            year: "2011-12",
-            image_url: "timeline2.png"
-        },
-        {
-            year: "2013-14",
-            image_url: "timeline1.png"
-        },
-        {
-            year: "2015-16",
-            image_url: "timeline2.png"
-        },
-        {
-            year: "2016-17",
-            image_url: "timeline1.png"
-        },
-        {
-            year: "2018-19",
-            image_url: "timeline2.png"
-        },
-        {
-            year: "2020-21",
-            image_url: "timeline1.png"
-        },
-        {
-            year: "2022-23",
-            image_url: "timeline2.png"
-        },
-    ]
     return (
         <>
             <motion.section className="timeline_wrapper" initial={{ opacity: 0, y: 100 }}
@@ -65,24 +44,19 @@ const Timeline = () => {
                     </div>
                     <div className="timeline_cards_collection">
                         {
-                            timelines.map((element, index) => {
-                                return <TimelineCard key={index} year={element.year} image_url={element.image_url} setPopup={setPopup} />
+                            timelineData.map((element, index) => {
+                                return <TimelineCard key={index} year={element.year} content={element.content} setShowModal={setShowModal} setTimeline={setTimeline} />
                             })
                         }
                     </div>
                     {
                         popup &&
                         <div className="popup_image_container">
-                            <div className="close_option_wrapper">
-                                <IoCloseCircleOutline className="close_option" onClick={() => closePopup()} />
-                            </div>
-                            <div className="popup_image">
-                                <img src={popup} alt="timeline pic here" />
-                            </div>
                         </div>
                     }
                 </div>
             </motion.section>
+            {showModal && <Modal closeModal={closePopup} timeline={timeline} />}
         </>
     )
 }

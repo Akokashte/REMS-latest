@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/myaccordian.css";
 import { IoIosArrowDropdown } from "react-icons/io";
+import { motion } from 'framer-motion';
 
 const MyAccordian = (props) => {
     const { accordian_head, accordian_content } = props;
@@ -20,14 +21,19 @@ const MyAccordian = (props) => {
                 </div>
                 {accordian_content.map((curElem, index) => {
                     return (
-                        <div key={index} className={trigger ? "accordian_content_click" : "accordian_content"} >
+                        trigger &&
+                        <motion.div initial={{ height: 0 }}
+                            animate={{ height: "auto" }}
+                            exit={{ height: 0 }}
+                            key={index} className={trigger ? "accordian_content_click" : "accordian_content"} >
                             <div className="accordian_content_head">
                                 {curElem.content_head}
                             </div>
                             <div className="accordian_content_description">
                                 {curElem.content_description}
                             </div>
-                        </div>
+                        </motion.div>
+                        
                     )
                 })
                 }

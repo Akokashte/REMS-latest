@@ -5,17 +5,19 @@
 }
 
 .my_accordian {
-    width: 70%;
+    width:80%;
     margin: 0 auto;
     border-radius: 1.2rem;
     line-height: 2rem;
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 0.5rem;
     cursor: pointer;
-    padding: 1rem 1.2rem 0 1.2rem;
+    padding: 1.2rem 1.2rem;
     border: 1px solid #9750a6;
     background-color: var(--bg_light);
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .accordian_head {
@@ -34,29 +36,29 @@
 
 .accordian_content {
     display: flex;
-    height: 0;
     gap: 1.2rem;
-    visibility: hidden;
+    /* visibility: hidden; */
+    height: 0;
+    overflow: hidden;
+    position: absolute;
     margin-top: 0;
     padding: 0 0;
     border-radius: 0 0 1.2rem 1.2rem;
-    opacity: 0;
-    transition: height 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out,opacity 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
+
 .accordian_content_click {
     display: flex;
-    height: auto;
-    gap: 1.2rem;
+    gap: 0;
     border-top: 1px solid #9750a6;
     margin-top: 1rem;
     padding: 1rem 0;
     border-radius: 0 0 1.2rem 1.2rem;
-    opacity: 1;
     overflow: hidden;
-    transition: height 0.3s ease-in-out,margin-top 0.3s ease-in-out,padding 0.3s ease-in-out,border-top 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .accordian_content_head {
+    overflow: hidden;
     text-transform: capitalize;
     font-size: var(--extra_small);
     font-weight: var(--mid);
@@ -65,7 +67,65 @@
 }
 
 .accordian_content_description {
+    overflow: hidden;
     font-size: var(--extra_small);
-    font-weight: var(--regular); 
+    font-weight: var(--regular);
     width: 90%;
+}
+
+
+
+
+
+
+
+/* mobile css */
+
+@media (width<480px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .my_accordian{
+        width: 90%;
+    }
+    .accordian_head {
+        gap: 0.5rem;
+        font-size: var(--extra_small);
+    }
+    
+    .faq_que{
+        width: 90%;
+    }
+
+    .accordian_head .accordian_dropdown_icon {
+        width: 10%;
+        font-size: 1.5rem;
+    }
+  
+    .accordian_content {
+        gap: 0;
+    }
+    
+    .accordian_content_click {
+        width: 100%;
+        display: flex;
+        gap: 0;
+    }
+    
+    .accordian_content_head {
+        width: 28%;
+        text-transform: capitalize;
+        font-size: var(--extra_small);
+        font-weight: var(--mid);
+    }
+    
+    .accordian_content_description {
+        width: 72%;
+        text-align: justify;
+        font-size: var(--extra_small);
+        font-weight: var(--regular);
+    }
+    
 }
